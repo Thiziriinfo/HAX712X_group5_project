@@ -1,12 +1,33 @@
 # HAX712X_group5_project
 L'objectif du projet est de créer une application web dans laquelle il sera possible de visualiser un graphique ou plusieurs graphiques simultanément décrivant l'évolution d'une valeur de polluant en fonction d'une donnée du climat. Tout ceci pourra être conditionné en amont par d'autres choix.
 
+```mermaid
+flowchart TD
+    A[Zone] --> B[Condition]
+    B --> D[Pollution]
+    B --> E[Climat]
+    E --> G[Graphique]
+    D --> G
+```
+
 De plus, nous créerons une carte intéractive cliquablede la région Occitanie à la précision du canton pour obtenir un traitement suffisamment fin, l'échelle du département étant trop grande. 
 
 Pour faire tout ça, nous nous organiserons en trois équipes 
  - équipe 1 : le traitement des données
  - équipe 2 : le visuel
  - équipe 3 : le lien
+
+   ```mermaid
+gantt
+    title Project_timeline
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2023-10-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2023-10-22, 12d
+        another task    :24d
+```
 
 ## Le traitement des données
 
