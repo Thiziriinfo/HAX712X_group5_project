@@ -17,7 +17,7 @@ Pour faire tout ça, nous nous organiserons en trois équipes
  - équipe 2 : le visuel
  - équipe 3 : le lien
 
-   ```mermaid
+```mermaid
 gantt
     title Project_timeline
     dateFormat YYYY-MM-DD
