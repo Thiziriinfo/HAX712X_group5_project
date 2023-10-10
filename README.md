@@ -1,4 +1,4 @@
-# HAX712X_group5_project
+# Occitanie air quality explorer
 L'objectif du projet est de créer une application web dans laquelle il sera possible de visualiser un graphique ou plusieurs graphiques simultanément décrivant l'évolution d'une valeur de polluant en fonction d'une donnée du climat. Tout ceci pourra être conditionné en amont par d'autres choix.
 
 ```mermaid
