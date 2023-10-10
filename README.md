@@ -27,7 +27,7 @@ gantt
         Snpashot : 2023-10-22
     section Development
         Traitements des données : a2, 2023-10-22, 30d
-        Visualiation   : 2023-10-22, 30d
+        Visualiation   : 2023-11-01, 30d
         Coordination : 2023-11-15 , 25d
         Documentation : a3, after a2 , 10d
         Beamer : after a3, 5d
