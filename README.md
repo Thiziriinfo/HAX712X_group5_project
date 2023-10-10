@@ -19,29 +19,35 @@ Pour faire tout ça, nous nous organiserons en trois équipes
 
 ```mermaid
 gantt
-    title Project_timeline
+    title Occitanie air quality explorer
     dateFormat YYYY-MM-DD
-    section Section
-        A task          :a1, 2023-10-01, 30d
-        Another task    :after a1, 20d
-    section Another
-        Task in Another :2023-10-22, 12d
-        another task    :24d
+    section Phase 1
+        Brainstrorming 1 :a1, 2023-10-01, 10d
+        Brainstorming 2  :after a1, 10d
+        Snpashot : 2023-10-22
+    section Development
+        Traitements des données : a2, 2023-10-22, 30d
+        Visualiation   : 2023-10-22, 30d
+        Coordination : 2023-11-15 , 25d
+        Documentation : a3, after a2 , 10d
+        Beamer : after a3, 5d
 ```
 
 ## Le traitement des données
 
-Les packages standarts de traitements des données seront utilisées ici : pandas, numpy, scipy. Il s'agira dans un premier temps de nettoyer les données pour obtenir des dataframes utilisables.
+Les packages standarts de traitements des données seront utilisés ici : pandas, numpy, scipy. 
+Il s'agira dans un premier temps de nettoyer les données pour obtenir des dataframes utilisables.
 
 ## Le visuel
 
-Pour créer cette carte, nous utiliserons le package Python : folium. Nous introduirons un fichier Geojson pour obtenir une carte cliquable à la précision du canton.
+Pour créer cette carte, nous utiliserons le package Python : folium ou choropleth. Nous introduirons un fichier Geojson pour obtenir une carte cliquable à la précision du canton.
 
 Pour définir nos choix de variables à utiliser pour tracer les grahiques, nous utiliserons le package python dash. Cela nous permettra d'obtenir d'intéractivité dans nos graphiques.
 
-Pour les graphiques, plusieurs choix s'offrent à nous : matplotlib, seaborn. Nous ne sommes pas encore fixés dessus. 
+Pour les graphiques, plusieurs choix s'offrent à nous : matplotlib, seaborn. Nous ne sommes pas encore fixés dessus.
+Enfin pour la page web nous utiliserons le framework django.
 
-
+## L'analyse et interprétataion des résultats
 
 ## Membres et contact
 
