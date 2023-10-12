@@ -42,7 +42,7 @@ Il s'agira dans un premier temps de nettoyer les données pour obtenir des dataf
 
 Pour créer cette carte, nous utiliserons le package Python : folium ou choropleth. Nous introduirons un fichier Geojson pour obtenir une carte cliquable à la précision du canton.
 
-Pour définir nos choix de variables à utiliser pour tracer les grahiques, nous utiliserons le package python dash. Cela nous permettra d'obtenir d'intéractivité dans nos graphiques.
+Pour définir nos choix de variables à utiliser pour tracer les grahiques, nous utiliserons le package python dash. Cela nous permettra d'obtenir de l'intéractivité dans nos graphiques.
 
 Pour les graphiques, plusieurs choix s'offrent à nous : matplotlib, seaborn. Nous ne sommes pas encore fixés dessus.
 Enfin pour la page web nous utiliserons le framework django.
