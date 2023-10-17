@@ -47,7 +47,7 @@ Pour définir nos choix de variables à utiliser pour tracer les grahiques, nous
 Pour les graphiques, plusieurs choix s'offrent à nous : matplotlib, seaborn. Nous ne sommes pas encore fixés dessus.
 Enfin pour la page web nous utiliserons le framework django.
 
-## L'analyse et interprétataion des résultats
+## L'analyse et interprétation des résultats
 
 ## Membres et contact
 
