@@ -52,7 +52,7 @@ Pour faire tout ça, nous nous organiserons en quatre phases  :
 
 Durant le développement du projet, l'IDE commun sera Jupyter-Notebook.
 
-**ORganisation temporelle du projet**
+**Organisation temporelle du projet**
 <center>
 ```{mermaid}
 gantt
@@ -72,21 +72,29 @@ gantt
 ```
 </center>
 
+Nous avons donc créé trois branches correspondant aux trois phases principales du projet : la sélection (select_data), le traitement des données (data) et l'interface utilisateur (visu). Ceci nous permettra de travailler en parallèle sur les différents aspects du projet dès que cela sera possible.
+
+## Choix des données
+
+La mesure de la quantité d'un polluant dépent du mois et de l'heure à laquelle elle est effectuée. En effet cette quantité dépend du moment de l'année : la consommation de gaz, donc la pollution qu'elle engendre, est plus importante en hiver qu'en été. L'heure de mesure joue aussi son rôle, et à titre d'exemple, on peut citer la pollution générée par les voitures aux heures de pointe. Nous sommes donc contraints de choisir le dataset Atmo intitulé : "Mesures horaires 1 an glissant". Le dataset est bien structuré et sera plutôt simple à manipuler. 
+
+Une première exploration rapide semble montrer que ce n'est pas du tout le cas sur les données Synop. Si la station d'enregistrement est correcte, le reste par contre laisse à désirer. En exemple on peut citer qu'après un tri par région (Occitanie), la colonne "department (name)" mélange des valeurs numériques : numéro de département, des noms de départements, des noms de lieu ou station de relevé etc ... Nous devrons donc effectuer un gros tri des données en amont pour obtenir quelque-chose de véritablement exploitable et pertinent. Pour être en adéquation avec le dataset Atmo, nous en prendrons un qui se basera sur les mêmes données à savoir sur un an glissant. L'échelle horaire ne peut pas être précisée ici car les observations sont moins fréquentes et coordonnées.
+
 ## La sélection des données
 
 Pour cette phase de sélection, nous utiliserons différents packages : 
 
-     * Django qui semble adapté à nos besoins pour faire nos requêtes API (Apirest).
-     * Python-json : pour manipuler le json
-     
-
+     * Django qui semble adapté à nos besoins pour faire nos requêtes API (Apirest) ;
+     * Python-json : pour manipuler le json ;
+     * Panda : si nous choisissons plutôt d'utiliser des fichiers csv.
+      
 ## Traitements des données
 
 Les packages standards de traitements des données seront utilisés :
 
- - Pandas 
- - Numpy 
- - Scipy 
+ * Pandas 
+ * Numpy 
+ * Scipy 
  
 Il s'agira dans un premier temps de nettoyer les données pour obtenir des dataframes utilisables.
  

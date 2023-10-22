@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>phase 4</strong> : Documentation, Beamer</p></li>
 </ul>
 <p>Durant le développement du projet, l’IDE commun sera Jupyter-Notebook.</p>
-<strong>ORganisation temporelle du projet</strong>
+<strong>Organisation temporelle du projet</strong>
 <center>
 <div class="cell">
 <div class="cell-output-display">
@@ -140,12 +140,19 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </center>
+<p>Nous avons donc créé trois branches correspondant aux trois phases principales du projet : la sélection (select_data), le traitement des données (data) et l’interface utilisateur (visu). Ceci nous permettra de travailler en parallèle sur les différents aspects du projet dès que cela sera possible.</p>
+<section id="choix-des-données" class="level2">
+<h2 class="anchored" data-anchor-id="choix-des-données">Choix des données</h2>
+<p>La mesure de la quantité d’un polluant dépent du mois et de l’heure à laquelle elle est effectuée. En effet cette quantité dépend du moment de l’année : la consommation de gaz, donc la pollution qu’elle engendre, est plus importante en hiver qu’en été. L’heure de mesure joue aussi son rôle, et à titre d’exemple, on peut citer la pollution générée par les voitures aux heures de pointe. Nous sommes donc contraints de choisir le dataset Atmo intitulé : “Mesures horaires 1 an glissant”. Le dataset est bien structuré et sera plutôt simple à manipuler.</p>
+<p>Une première exploration rapide semble montrer que ce n’est pas du tout le cas sur les données Synop. Si la station d’enregistrement est correcte, le reste par contre laisse à désirer. En exemple on peut citer qu’après un tri par région (Occitanie), la colonne “department (name)” mélange des valeurs numériques : numéro de département, des noms de départements, des noms de lieu ou station de relevé etc … Nous devrons donc effectuer un gros tri des données en amont pour obtenir quelque-chose de véritablement exploitable et pertinent. Pour être en adéquation avec le dataset Atmo, nous en prendrons un qui se basera sur les mêmes données à savoir sur un an glissant. L’échelle horaire ne peut pas être précisée ici car les observations sont moins fréquentes et coordonnées.</p>
+</section>
 <section id="la-sélection-des-données" class="level2">
 <h2 class="anchored" data-anchor-id="la-sélection-des-données">La sélection des données</h2>
 <p>Pour cette phase de sélection, nous utiliserons différents packages :</p>
-<pre><code> * Django qui semble adapté à nos besoins pour faire nos requêtes API (Apirest).
- * Python-json : pour manipuler le json
- </code></pre>
+<pre><code> * Django qui semble adapté à nos besoins pour faire nos requêtes API (Apirest) ;
+ * Python-json : pour manipuler le json ;
+ * Panda : si nous choisissons plutôt d'utiliser des fichiers csv.
+  </code></pre>
 </section>
 <section id="traitements-des-données" class="level2">
 <h2 class="anchored" data-anchor-id="traitements-des-données">Traitements des données</h2>
