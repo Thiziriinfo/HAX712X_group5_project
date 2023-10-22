@@ -11,6 +11,25 @@ flowchart TD
     D --> G
 ```
 </center>
+Le code s'articulera comme suit :
+
+```{mermaid}
+flowchart TD
+    A[OpenDataSoft]
+    B[Data Atmo Occitanie]
+    C{{API REST}}
+    D[Jupyter Notebook]
+    E{{Jupyter Widgets}}
+    F{{Quarto}}
+    G[GitHub Pages]
+
+    A-->C
+    B-->C
+    C-->D
+    E-->D
+    D-->F & E
+    F-->G
+```
 
 De plus, nous créerons une carte intéractive cliquable de la région Occitanie à la précision du canton pour obtenir un traitement suffisamment fin, l'échelle du département étant à priori trop grande. Toutefois, nous serons peut-être amené à changer celà en fonction de l'exploration des données. 
 
