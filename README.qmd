@@ -61,12 +61,12 @@ gantt
     section Phase 1
         Brainstrorming 1 :a1, 2023-10-01, 10d
         Brainstorming 2  :after a1, 10d
-        Snpashot : 2023-10-22
+        Snpashot : 2023-10-23
     section Development
         Sélection des données : a2, 2023-10-22, 30d
         Traitements des données : after a2, 15d
         Interface utilisateur   : 2023-11-01, 30d
-        Coordination : 2023-11-15 , 25d
+        Coordination : 2023-11-15 , 23d
         Documentation : a3, after a2 , 10d
         Beamer : after a3, 5d
 ```
