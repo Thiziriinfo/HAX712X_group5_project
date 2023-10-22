@@ -1,6 +1,7 @@
 # Occitanie air quality explorer
-L'objectif du projet est de créer une application web dans laquelle il sera possible de visualiser un graphique ou plusieurs graphiques simultanément décrivant l'évolution d'une valeur de polluant en fonction d'une donnée du climat. Tout ceci pourra être conditionné en amont par d'autres choix.
+L'objectif du projet est de créer une application web dans laquelle il sera possible de visualiser un ou plusieurs graphiques simultanément décrivant l'évolution d'une valeur de polluant en fonction d'une donnée du climat. Tout ceci pourra être conditionné en amont par d'autres choix. On pourra visaliser la concentration des polluants en fonction du temps.
 
+<center>
 ```{mermaid}
 flowchart TD
     A[Zone] --> B[Condition]
@@ -9,16 +10,30 @@ flowchart TD
     E --> G[Graphique]
     D --> G
 ```
+</center>
 
 De plus, nous créerons une carte intéractive cliquable de la région Occitanie à la précision du canton pour obtenir un traitement suffisamment fin, l'échelle du département étant à priori trop grande. Toutefois, nous serons peut-être amené à changer celà en fonction de l'exploration des données. 
 
-Pour faire tout ça, nous nous organiserons en trois équipes : 
+Pour faire tout ça, nous nous organiserons en quatre phases  : 
 
-* équipe 1 : le traitement des données  
-* équipe 2 : le visuel  
-* équipe 3 : la structure algorithmique et les liens entre les différentes parties  
+* phase 1 : la sélection des données
+    - Restapi : demande python vers url
+    - Parsing : découpage du fichier json en catégorie (date à priori)
+    - Traduction : du json vers PythonDict
+    - Liste des données sélectionnées
+    
+* phase 2 : Traitement des données
+    - Carte intéractive
+    - Graphique
+    
+* phase 3 : Interface utilisateur 
+
+* phase 4 : Documentation, Beamer 
+
+Durant le développement du projet, l'IDE commun sera Jupyter-Notebook.
 
 
+<center>
 ```{mermaid}
 gantt
     title Occitanie air quality explorer
@@ -28,35 +43,61 @@ gantt
         Brainstorming 2  :after a1, 10d
         Snpashot : 2023-10-22
     section Development
-        Traitements des données : a2, 2023-10-22, 30d
-        Visualiation   : 2023-11-01, 30d
+        Sélection des données : a2, 2023-10-22, 30d
+        Traitements des données : after a2, 15d
+        Interface utilisateur   : 2023-11-01, 30d
         Coordination : 2023-11-15 , 25d
         Documentation : a3, after a2 , 10d
         Beamer : after a3, 5d
 ```
+</center>
 
-## Le traitement des données
+## La sélection des données
+
+Pour cette phase de sélection, nous utiliserons différents packages : 
+
+     * Django qui semble adapté à nos besoins pour faire nos requêtes API (Apirest).
+     * Python-json : pour manipuler le json
+     
+
+## Traitements des données
 
 Les packages standards de traitements des données seront utilisés :
 
  - pandas 
  - numpy 
  - scipy 
-
-
+ 
 Il s'agira dans un premier temps de nettoyer les données pour obtenir des dataframes utilisables.
+ 
+Ensuite obtenir notre carte intéractive, nous utiliserons l'ensemble des librairies Jupyter-Widget (Ipyleaflet, Threejs ...).
 
-## Le visuel
-
-Pour créer cette carte, nous utiliserons le package Python : folium qui semble être pertinent pour effectuer cette tâche. Nous introduirons un fichier Geojson pour obtenir une carte cliquable à la précision du canton.
+Exemple de visuel attendu : 
 
 <center>
 ![](./Images/canton_occitanie.svg "Carte des cantons")
 </center>
 
-Sur cette même carte nous souhaiterions avoir des menus déroulants avec les différents choix de polluants. Puis en cliquant sur un canton, cela nous afficherait le graphique du polluant en fonction du temps.
+## Interface utilisateur
 
-Pour définir nos choix de variables à utiliser pour tracer les grahiques, nous utiliserons le package python dash. Cela nous permettra d'obtenir de l'intéractivité dans nos graphiques. Nous aimerions obtenir quelquechose de ce type :
+Sur cette même carte nous souhaiterions avoir des menus déroulants avec les différents choix de polluants comme ci-dessous : 
+
+<center>
+<form>
+<label for="pays">Sélectionnez le Polluant :</label>
+<select id="pays" name="pays">
+  <option value="france">NO2</option>
+  <option value="espagne">CO2</option>
+  <option value="belgique">SO2</option>
+  <!-- Autres options -->
+</select>
+</form>
+</center>
+
+Puis en cliquant sur un canton, cela nous afficherait le graphique du polluant en fonction du temps ou d'une donnée météorologique.
+
+
+Nous souhaiterions obtenir quelque-chose ressemeblant à l'image ci-dessous :
 
 <center>
 ![](./Images/dash_result.png "Résultat espéré")
@@ -66,10 +107,12 @@ Pour les graphiques, plusieurs choix s'offrent à nous :
 
 * matplotlib 
 * seaborn 
-  
-Nous ne sommes pas encore fixés dessus. Enfin pour la page web nous utiliserons quarto.
 
-## L'analyse et interprétation des résultats
+Enfin pour la page web nous utiliserons Quarto qui sintègre bien à l'ensemble de nos choix de packages pour notre projet.
+
+## Documentation et beamer
+
+Pour la documentation, nous utiliserons la librairie Sphynx et pour la réalisation du diaporama de présentation, nous passerons par l'interface de Quarto. 
 
 ## Membres et contact
 
