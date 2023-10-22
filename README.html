@@ -50,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="occitanie-air-quality-explorer" class="level1">
 <h1>Occitanie air quality explorer</h1>
-<p>L’objectif du projet est de créer une application web dans laquelle il sera possible de visualiser un ou plusieurs graphiques simultanément décrivant l’évolution d’une valeur de polluant en fonction d’une donnée du climat. Tout ceci pourra être conditionné en amont par d’autres choix. On pourra visaliser la concentration des polluants en fonciton du temps.</p>
+<p>L’objectif du projet est de créer une application web dans laquelle il sera possible de visualiser un ou plusieurs graphiques simultanément décrivant l’évolution d’une valeur de polluant en fonction d’une donnée du climat. Tout ceci pourra être conditionné en amont par d’autres choix notamment temporels. Cela permettra de visualiser différents types de graphiques concernant les polluants.</p>
 <center>
 <div class="cell">
 <div class="cell-output-display">
@@ -68,24 +68,53 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </center>
+<p>Le code s’articulera comme suit :</p>
+<center>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    A[OpenDataSoft]
+    B[Data Atmo Occitanie]
+    C{{API REST}}
+    D[Jupyter Notebook]
+    E{{Jupyter Widgets}}
+    F{{Quarto}}
+    G[GitHub Pages]
+
+    A--&gt;C
+    B--&gt;C
+    C--&gt;D
+    E--&gt;D
+    D--&gt;F &amp; E
+    F--&gt;G
+</pre>
+</div>
+</div>
+</div>
+</div>
+</center>
 <p>De plus, nous créerons une carte intéractive cliquable de la région Occitanie à la précision du canton pour obtenir un traitement suffisamment fin, l’échelle du département étant à priori trop grande. Toutefois, nous serons peut-être amené à changer celà en fonction de l’exploration des données.</p>
 <p>Pour faire tout ça, nous nous organiserons en quatre phases :</p>
 <ul>
-<li><p>phase 1 : la sélection des données</p>
+<li><p><strong>phase 1</strong> : la sélection des données</p>
 <ul>
 <li>Restapi : demande python vers url</li>
 <li>Parsing : découpage du fichier json en catégorie (date à priori)</li>
 <li>Traduction : du json vers PythonDict</li>
 <li>Liste des données sélectionnées</li>
 </ul></li>
-<li><p>phase 2 : Traitement des données</p>
+<li><p><strong>phase 2</strong> : Traitement des données</p>
 <ul>
 <li>Carte intéractive</li>
 <li>Graphique</li>
 </ul></li>
-<li><p>phase 3 : Interface utilisateur</p></li>
-<li><p>phase 4 : Documentation, Beamer</p></li>
+<li><p><strong>phase 3</strong> : Interface utilisateur</p></li>
+<li><p><strong>phase 4</strong> : Documentation, Beamer</p></li>
 </ul>
+<p>Durant le développement du projet, l’IDE commun sera Jupyter-Notebook.</p>
+<strong>ORganisation temporelle du projet</strong>
 <center>
 <div class="cell">
 <div class="cell-output-display">
@@ -100,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
         Snpashot : 2023-10-22
     section Development
         Sélection des données : a2, 2023-10-22, 30d
-        Traitements des données : after a2, 15 d
+        Traitements des données : after a2, 15d
         Interface utilisateur   : 2023-11-01, 30d
         Coordination : 2023-11-15 , 25d
         Documentation : a3, after a2 , 10d
@@ -114,46 +143,48 @@ ul.task-list li input[type="checkbox"] {
 <section id="la-sélection-des-données" class="level2">
 <h2 class="anchored" data-anchor-id="la-sélection-des-données">La sélection des données</h2>
 <p>Pour cette phase de sélection, nous utiliserons différents packages :</p>
-<pre><code> - Django qui semble adapté à nos besoins pour faire nos requêtes API (Apirest).
- - Python-json : pour manipuler le json
+<pre><code> * Django qui semble adapté à nos besoins pour faire nos requêtes API (Apirest).
+ * Python-json : pour manipuler le json
  </code></pre>
 </section>
 <section id="traitements-des-données" class="level2">
 <h2 class="anchored" data-anchor-id="traitements-des-données">Traitements des données</h2>
 <p>Les packages standards de traitements des données seront utilisés :</p>
 <ul>
-<li>pandas</li>
-<li>numpy</li>
-<li>scipy</li>
+<li>Pandas</li>
+<li>Numpy</li>
+<li>Scipy</li>
 </ul>
 <p>Il s’agira dans un premier temps de nettoyer les données pour obtenir des dataframes utilisables.</p>
-<p>Ensuite obtenir notre carte intéractive, nous utiliserons l’ensemble des librairies Jupyter-Widget (Ipyleaflet, Threejs …)</p>
+<p>Afin d’obtenir notre carte intéractive, nous utiliserons l’ensemble des librairies Jupyter-Widget (Ipyleaflet, Threejs …).</p>
+<p>Exemple de visuel attendu :</p>
 <center>
 <img src="./Images/canton_occitanie.svg" title="Carte des cantons" class="img-fluid">
 </center>
 </section>
 <section id="interface-utilisateur" class="level2">
 <h2 class="anchored" data-anchor-id="interface-utilisateur">Interface utilisateur</h2>
-<p>Sur cette même carte nous souhaiterions avoir des menus déroulants avec les différents choix de polluants. Puis en cliquant sur un canton, cela nous afficherait le graphique du polluant en fonction du temps.</p>
+<p>Sur cette même carte nous souhaiterions avoir des menus déroulants avec les différents choix de polluants comme l’exemple simpliste ci-dessous :</p>
 <center>
 <form>
 <label for="pays">Sélectionnez le Polluant :</label> <select id="pays" name="pays"> <option value="france">NO2</option> <option value="espagne">CO2</option> <option value="belgique">SO2</option> <!-- Autres options --> </select>
 </form>
 </center>
-<p>Nous souhaiterions obtenir quelque-chose ressemeblant à l’image ci-dessous :</p>
+<p>Puis en cliquant sur un canton, notre application afficherait le graphique désiré sur le contaon choisi.</p>
+<p>Nous souhaiterions obtenir quelque-chose ressemblant à l’image ci-dessous :</p>
 <center>
 <img src="./Images/dash_result.png" title="Résultat espéré" class="img-fluid">
 </center>
-<p>Pour les graphiques, plusieurs choix s’offrent à nous :</p>
+<p>Pour les graphiques, nous utiliserons les librairies classiques que sont :</p>
 <ul>
-<li>matplotlib</li>
-<li>seaborn</li>
+<li>Matplotlib</li>
+<li>Seaborn</li>
 </ul>
-<p>Enfin pour la page web nous utiliserons Quarto qui sintègre bien à l’ensemble de nos choix de packages pour notre projet.</p>
+<p>Enfin pour la page web, nous nous servirons Quarto qui sintègre bien à l’ensemble de nos choix de packages pour notre projet.</p>
 </section>
 <section id="documentation-et-beamer" class="level2">
 <h2 class="anchored" data-anchor-id="documentation-et-beamer">Documentation et beamer</h2>
-<p>Pour la documentation, nous utiliserons la librairies Sphynx et pour la réalisation du diaporama de présentation, nous passerons par l’interface de Quarto.</p>
+<p>Pour la documentation, nous utiliserons la librairie Sphynx et pour la réalisation du diaporama de présentation, nous passerons par l’interface de Quarto.</p>
 </section>
 <section id="membres-et-contact" class="level2">
 <h2 class="anchored" data-anchor-id="membres-et-contact">Membres et contact</h2>
