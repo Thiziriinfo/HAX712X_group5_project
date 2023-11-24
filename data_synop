@@ -1,24 +1,29 @@
-import pandas as pd
+import requests
 import json
 
-class MesDonnees:
-    def __init__(self, chemin_fichier):
-        self.chemin_fichier = chemin_fichier
-        self.df = self.lire_donnees()
+class DataApi:
+    def __init__(self, url_api):
+        self.url_api = url_api
+        self.donnees = None
+        self.charger_donnees()
 
-    def lire_donnees(self):
-        # Charger les données depuis le fichier JSON
-        with open(self.chemin_fichier, 'r') as json_file:
-            data = json.load(json_file)["results"]
+    def charger_donnees(self):
+        # Faire une requête à l'API
+        reponse = requests.get(self.url_api)
 
-        # Construire un DataFrame à partir de la liste de dictionnaires
-        df = pd.json_normalize(data)
-        return df
+        # Vérifier si la requête a réussi (statut 200)
+        if reponse.status_code == 200:
+            # Charger les données depuis la réponse JSON
+            self.donnees = reponse.json()
+        else:
+            # Afficher un message d'erreur si la requête échoue
+            print(f"Erreur de requête à l'API. Code de statut: {reponse.status_code}")
 
-# Utilisation de la classe
-chemin_fichier = 'donnees_synop.json'
-mes_donnees = MesDonnees(chemin_fichier)
+# Utilisation de la classe avec l'URL de l'API
+url_api = 'https://public.opendatasoft.com/api/explore/v2.1/catalog/datasets/donnees-synop-essentielles-omm/records'
+api_donnees = DataApi(url_api)
 
-# Afficher le DataFrame
-print("DataFrame:")
-print(mes_donnees.df)
+# Afficher les données brutes
+if api_donnees.donnees:
+    print("Données brutes:")
+    print(json.dumps(api_donnees.donnees, indent=2))
