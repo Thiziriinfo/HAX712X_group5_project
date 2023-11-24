@@ -7,5 +7,20 @@
   },
   "meteo.qmd": {
     "meteo.html": "09112040"
+  },
+  "occitanie.qmd": {
+    "occitanie.html": "29488c1d"
+  },
+  "virt/Lib/site-packages/idna-3.4.dist-info/LICENSE.md": {
+    "LICENSE.html": "5662d212"
+  },
+  "virt/Lib/site-packages/numpy/random/LICENSE.md": {
+    "LICENSE.html": "db180413"
+  },
+  "virt/Lib/site-packages/pyzmq-25.1.1.dist-info/AUTHORS.md": {
+    "AUTHORS.html": "593daadd"
+  },
+  "map.qmd": {
+    "map.html": "417bbe03"
   }
 }

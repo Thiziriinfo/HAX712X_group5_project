@@ -3,10 +3,10 @@ project:
   output-dir: docs
 
 website:
-  title: "Perso"
+  title: "carte"
   navbar:
     left:
-      - href: meteo.qmd
+      - href: map.qmd
         text: Home
       
 
