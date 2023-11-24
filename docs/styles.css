@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.table1-style {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.table1-style th, .table1-style td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table1-style th {
+    background-color: #f2f2f2;
+}
+
+.temp-cell {
+    font-weight: bold;
+}
+
+.day-header {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.day-cell {
+    border-right: 3px solid rgba(85, 215, 195, 0.5);
+    border-left: 3px solid rgba(85, 215, 195, 0.5);
+}
+
+.temperature-row {
+    background-color: rgba(255, 165, 80, 0.5);
+    font-weight: bold;
+}
+
+.temperature-row td {
+    background-color: rgba(255, 165, 80, 0.5);
+    font-weight: bold;
+}
+
+.temperature-row .temp-cell {
+    background-color: rgba(255, 165, 80, 0.5);
+    font-weight: bold;
+    border-right: 3px solid rgba(85, 215, 195, 0.5);
+    border-left: 3px solid rgba(85, 215, 195, 0.5);
+}
+
+.temperature-row .temp-cell:last-child {
+    border-right: none;
+}
+
+.temperature-row td:first-child {
+    border-top-left-radius: 20px;
+}
+
+.temperature-row td:last-child {
+    border-top-right-radius: 20px;
+}
+
+.wind-row td {
+    border-right: 3px solid rgba(85, 215, 195, 0.5);
+    border-left: 3px solid rgba(85, 215, 195, 0.5);
+}
+
+.precipitation-row {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.precipitation-row td {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.precipitation-row td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+.goutte-img {
+    width: 20px;
+    height: 20px;
+}
