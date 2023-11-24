@@ -1,0 +1,3 @@
+Quarto et Shiny : https://quarto.org/docs/interactive/shiny/
+Shiny en python : https://shiny.posit.co/py/docs/overview.html
+Shinylive : https://shiny.posit.co/py/docs/shinylive.html
