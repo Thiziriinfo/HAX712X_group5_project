@@ -1,0 +1,24 @@
+import pandas as pd
+import json
+
+class MesDonnees:
+    def __init__(self, chemin_fichier):
+        self.chemin_fichier = chemin_fichier
+        self.df = self.lire_donnees()
+
+    def lire_donnees(self):
+        # Charger les données depuis le fichier JSON
+        with open(self.chemin_fichier, 'r') as json_file:
+            data = json.load(json_file)["results"]
+
+        # Construire un DataFrame à partir de la liste de dictionnaires
+        df = pd.json_normalize(data)
+        return df
+
+# Utilisation de la classe
+chemin_fichier = 'donnees_synop.json'
+mes_donnees = MesDonnees(chemin_fichier)
+
+# Afficher le DataFrame
+print("DataFrame:")
+print(mes_donnees.df)
