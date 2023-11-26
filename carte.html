@@ -16,7 +16,7 @@
       results.data.forEach(function(station) {
         L.marker([parseFloat(station.y_wgs84), parseFloat(station.x_wgs84)])
           .addTo(map)
-          .bindPopup(station.station + '<br>' + station.com + ', ' + station.dept);
+          .bindPopup(station.nom_station + '<br>' + station.nom_com + ', ' + station.nom_dept);
       });
     }
   });
