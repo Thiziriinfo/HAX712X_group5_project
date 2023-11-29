@@ -9,6 +9,7 @@ geojson_path = "departements-occitanie.geojson"
 with open(geojson_path) as f:
     geojson_data = json.load(f)
 
+
 # Créer une carte centrée sur la région Occitanie
 m = folium.Map(location=[43.6, 1.44], zoom_start=8)
 
@@ -29,6 +30,7 @@ folium.GeoJson(
     geojson_data,
     style_function=style_function,
 ).add_to(m)
+
 
 # Enregistrez la carte au format HTML
 m.save("carte_interactive_occitanie_coloree.html")
