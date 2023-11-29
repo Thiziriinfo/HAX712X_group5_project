@@ -7,16 +7,16 @@ import matplotlib.gridspec as gridspec
 
 # %%
 # lecture du dataframe
-df = pd.read_csv("./data/mesure_horaire_view.csv")
+df_atmo = pd.read_csv("./data/mesure_horaire_view.csv")
 
 # %%
-# nettoyage df
-df = df.drop(["date_fin", "statut_valid", "x_l93", "y_l93", "geom", "metrique"], axis=1)
+# nettoyage df_atmo
+df_atmo = df_atmo.drop(["date_fin", "statut_valid", "x_l93", "y_l93", "geom", "metrique"], axis=1)
 
 
 # %%
 #graphique de la valeur des polluants le type de mesure
-pol_influ = df.groupby(['influence','nom_polluant'])[
+pol_influ = df_atmo.groupby(['influence','nom_polluant'])[
     'valeur'].mean().round(1).unstack(level=0)
 polluants = pol_typo.index.tolist()
 
@@ -42,7 +42,7 @@ plt.show()
 
 # %%
 #graphique de la valeur des polluants selon la typologie
-pol_typo = df.groupby(['typologie','nom_polluant'])[
+pol_typo = df_atmo.groupby(['typologie','nom_polluant'])[
     'valeur'].mean().round(1).unstack(level=0)
 polluants = pol_typo.index.tolist()
 

@@ -7,18 +7,18 @@ import matplotlib.gridspec as gridspec
 
 # %%
 # lecture du dataframe
-df = pd.read_csv("./data/mesure_horaire_view.csv")
+df_atmo = pd.read_csv("./data/donnees_atmo.csv")
 
 # %%
-# nettoyage df
-df = df.drop(["date_fin", "statut_valid", "x_l93", "y_l93", "geom", "metrique"], axis=1)
+# nettoyage df_atmo
+df_atmo = df_atmo.drop(["date_fin", "statut_valid", "x_l93", "y_l93", "geom", "metrique"], axis=1)
 
 
 # %%
 # liste des villes et des polluants triés
-villes = df["nom_com"].unique().tolist()
+villes = df_atmo["nom_com"].unique().tolist()
 villes.sort()
-polluants = df["nom_polluant"].unique().tolist()
+polluants = df_atmo["nom_polluant"].unique().tolist()
 polluants.sort()
 
 
@@ -26,10 +26,10 @@ polluants.sort()
 # fonction qui fait la sélection ville et polluant
 def selection(ville, polluant):
     if ville == "MONTPELLIER":
-        df["nom_station"] = df["nom_station"].replace(
+        df_atmo["nom_station"] = df_atmo["nom_station"].replace(
             ["Montpelier Pere Louis Trafic"], "Montpelier Antigone Trafic"
         )
-    df_1 = df.loc[(df["nom_com"] == ville) & (df["nom_polluant"] == polluant), :]
+    df_1 = df_atmo.loc[(df_atmo["nom_com"] == ville) & (df_atmo["nom_polluant"] == polluant), :]
     return df_1
 
 
