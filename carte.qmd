@@ -1,6 +1,7 @@
 ```{python}
 import folium
 import json
+import random
 
 # Charger le fichier GeoJSON
 geojson_path = "departements-occitanie.geojson"
@@ -11,10 +12,13 @@ with open(geojson_path) as f:
 # Créer une carte centrée sur la région Occitanie
 m = folium.Map(location=[43.6, 1.44], zoom_start=8)
 
-# Fonction de style pour assigner une couleur à chaque département
+# Fonction de style pour assigner une couleur aléatoire à chaque département
 def style_function(feature):
+    # Générez une couleur aléatoire au format hexadécimal
+    color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
+    
     return {
-        'fillColor': 'green',  # Changez cette couleur en fonction de vos préférences
+        'fillColor': color,
         'color': 'black',
         'weight': 1,
         'fillOpacity': 0.7
