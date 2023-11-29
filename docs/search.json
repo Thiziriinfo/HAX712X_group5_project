@@ -1,0 +1,9 @@
+[
+  {
+    "objectID": "occitanie.html",
+    "href": "occitanie.html",
+    "title": "Coordonnées des principales villes de l’Occitanie",
+    "section": "",
+    "text": "import folium from ipywidgets import interact\n\nCoordonnées des principales villes de l’Occitanie\n\n\nCoordonnées approximatives pour englober la région Occitanie\ncoordonnees_occitanie = [43.5, 2.0] # Centre de la région\n\n\nFonction qui crée la carte avec la région Occitanie centrée\ndef create_map_occitanie(): ma_carte_occitanie = folium.Map(location=coordonnees_occitanie, zoom_start=8)\n# Ajoutez des marqueurs ou des éléments supplémentaires si nécessaire\n\n# Enregistrez la carte dans un fichier HTML\nma_carte_occitanie.save('ma_carte_interactive_occitanie.html')\n\n\nCréez la carte de la région Occitanie\ncreate_map_occitanie()"
+  }
+]
