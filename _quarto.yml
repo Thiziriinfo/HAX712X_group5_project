@@ -7,7 +7,7 @@ website:
   navbar:
     left:
       - href: map.qmd
-        text: Home
+        text: map
       
 
 format:

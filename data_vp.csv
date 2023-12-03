@@ -1,0 +1,1001 @@
+,nom_com,nom_station,code_station,typologie,nom_poll,valeur,date_debut,influence
+0,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,69.3,2023-08-07,Fond
+1,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,66.7,2023-08-08,Fond
+2,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,65.4,2023-08-09,Fond
+3,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,72.8,2023-08-10,Fond
+4,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,54.0,2023-08-11,Fond
+5,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,65.2,2023-08-12,Fond
+6,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,56.6,2023-08-13,Fond
+7,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,47.0,2023-08-14,Fond
+8,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,58.3,2023-08-15,Fond
+9,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,56.7,2023-08-16,Fond
+10,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,51.6,2023-08-17,Fond
+11,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,67.5,2023-08-18,Fond
+12,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,73.5,2023-08-19,Fond
+13,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,71.0,2023-08-20,Fond
+14,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,77.9,2023-08-21,Fond
+15,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,PM10,8.0,2023-09-24,Fond
+16,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,95.5,2023-08-23,Fond
+17,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,78.8,2023-08-24,Fond
+18,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,65.2,2023-08-25,Fond
+19,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM10,6.3,2023-09-24,Fond
+20,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,7.1,2023-09-24,Trafic
+21,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,PM10,11.3,2023-09-24,Trafic
+22,AUCH,AUCH ST EXUPERY,FR50833,Urbaine,PM10,7.5,2023-09-24,Fond
+23,AGDE,Agathois-Piscénois - Périurbain,FR50210,Périurbaine,PM10,5.4,2023-09-24,Fond
+24,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,NOX,,2023-09-24,Fond
+25,ALBI,Albi Urbain,FR50026,Urbaine,PM10,19.6,2023-10-02,Fond
+26,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,NOX,9.8,2023-09-24,Fond
+27,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,NOX,19.1,2023-09-25,Fond
+28,TOULOUSE,Toulouse-SETMI Eisenhower Industriel,FR50039,Urbaine,PM10,9.6,2023-09-24,Industrielle
+29,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,PM10,9.3,2023-09-24,Trafic
+30,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,PM10,4.4,2023-09-24,Fond
+31,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM10,5.6,2023-09-24,Fond
+32,TOULOUSE,Toulouse - Rte Albi Trafic,FR50054,Urbaine,PM10,8.9,2023-09-24,Trafic
+33,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM10,13.7,2023-10-02,Fond
+34,TOULOUSE,Toulouse - Rte Albi Trafic,FR50054,Urbaine,PM10,,2023-10-02,Trafic
+35,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM10,14.4,2023-09-24,Trafic
+36,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,13.5,2023-09-25,Trafic
+37,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM10,6.7,2023-09-24,Fond
+38,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM10,12.0,2023-09-25,Fond
+39,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,6.9,2023-09-24,Trafic
+40,TOULOUSE,Toulouse-Berthelot Urbain,FR50030,Urbaine,PM10,8.2,2023-09-24,Fond
+41,AUCH,AUCH ST EXUPERY,FR50833,Urbaine,PM10,9.8,2023-09-25,Fond
+42,AGDE,Agathois-Piscénois - Périurbain,FR50210,Périurbaine,PM10,6.9,2023-09-25,Fond
+43,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,NOX,5.6,2023-09-24,Fond
+44,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,NOX,9.9,2023-09-25,Fond
+45,TOULOUSE,Toulouse - Rte Albi Trafic,FR50054,Urbaine,NOX,69.4,2023-09-24,Trafic
+46,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,NOX,,2023-09-25,Fond
+47,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,NOX,11.1,2023-09-24,Fond
+48,MONTPELLIER,Montpellier - Chaptal Urbain,FR50201,Urbaine,NOX,24.3,2023-09-24,Fond
+49,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,PM10,14.0,2023-10-02,Fond
+50,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,PM10,13.1,2023-10-02,Fond
+51,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,8.9,2023-09-24,Trafic
+52,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,PM10,7.8,2023-09-24,Fond
+53,NIMES,Nîmes Sud - Urbain,FR50211,Urbaine,PM10,5.9,2023-09-24,Fond
+54,NIMES,Nîmes Sud - Urbain,FR50211,Urbaine,PM10,9.0,2023-09-25,Fond
+55,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM10,4.9,2023-09-24,Fond
+56,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM10,5.8,2023-09-25,Fond
+57,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,PM10,4.1,2023-09-24,Fond
+58,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,PM10,5.6,2023-09-25,Fond
+59,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,12.0,2023-09-25,Trafic
+60,BLAGNAC,Blagnac Aéroport Piste ,FR50043,Périurbaine,PM10,6.1,2023-09-24,Trafic
+61,BLAGNAC,Blagnac Aéroport Piste ,FR50043,Périurbaine,PM10,8.6,2023-09-25,Trafic
+62,TOULOUSE,Toulouse - Rte Albi Trafic,FR50054,Urbaine,NOX,130.3,2023-09-25,Trafic
+63,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,PM10,26.4,2023-10-02,Trafic
+64,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,NOX,71.2,2023-09-24,Trafic
+65,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,PM10,18.9,2023-09-24,Trafic
+66,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,64.3,2023-08-26,Fond
+67,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,49.9,2023-08-27,Fond
+68,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,59.5,2023-08-28,Fond
+69,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,O3,47.4,2023-09-24,Fond
+70,CORNEILHAN,Biterrois-Narbonnais - Rural,FR50209,Rurale Régionale,O3,68.5,2023-09-24,Fond
+71,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,66.1,2023-08-29,Fond
+72,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,PM10,9.5,2023-10-02,Fond
+73,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,57.5,2023-09-24,Fond
+74,CORNEILHAN,Biterrois-Narbonnais - Rural,FR50209,Rurale Régionale,O3,70.6,2023-09-25,Fond
+75,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM10,20.1,2023-10-02,Fond
+76,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,NOX,0.63,2023-09-25,Fond
+77,AGDE,Agathois-Piscénois - Périurbain,FR50210,Périurbaine,NOX,3.0,2023-09-24,Fond
+78,SAINT-ESTEVE,Saint Estève - Périurbain,FR50221,Périurbaine,O3,62.9,2023-09-24,Fond
+79,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,74.6,2023-09-06,Fond
+80,LUNEL-VIEL,Lunel-Viel - Industriel,FR50206,Périurbaine,NOX,13.0,2023-09-24,Industrielle
+81,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,NOX,18.8,2023-09-24,Fond
+82,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,O3,49.6,2023-09-25,Fond
+83,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,NOX,,2023-09-24,Fond
+84,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,NOX,26.0,2023-09-24,Trafic
+85,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,O3,54.7,2023-09-25,Fond
+86,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,NOX,56.0,2023-09-25,Trafic
+87,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,O3,50.8,2023-09-24,Fond
+88,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,46.1,2023-09-25,Fond
+89,NIMES,Nîmes Sud - Urbain,FR50211,Urbaine,O3,58.7,2023-09-24,Fond
+90,TOULOUSE,Toulouse-Berthelot Urbain,FR50030,Urbaine,O3,45.5,2023-09-24,Fond
+91,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,O3,37.2,2023-09-24,Fond
+92,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,O3,52.7,2023-09-25,Fond
+93,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,O3,61.6,2023-09-24,Fond
+94,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,O3,39.0,2023-09-24,Fond
+95,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,NOX,35.9,2023-09-24,Trafic
+96,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,O3,46.7,2023-09-25,Fond
+97,NIMES,Nîmes Sud - Urbain,FR50211,Urbaine,O3,49.6,2023-09-25,Fond
+98,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,61.2,2023-08-30,Fond
+99,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,65.9,2023-09-24,Fond
+100,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,63.1,2023-09-25,Fond
+101,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,O3,57.5,2023-09-25,Fond
+102,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,O3,38.5,2023-09-24,Fond
+103,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,O3,44.2,2023-09-25,Fond
+104,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,O3,34.7,2023-09-24,Fond
+105,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,O3,42.1,2023-09-25,Fond
+106,LUNEL-VIEL,Lunel-Viel - Industriel,FR50206,Périurbaine,PM10,20.1,2023-10-02,Industrielle
+107,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,18.7,2023-10-02,Trafic
+108,MONTPELLIER,Montpelier Pere Louis Trafic,FR50227,Urbaine,NOX,48.4,2023-09-24,Trafic
+109,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM10,22.3,2023-10-02,Fond
+110,PERPIGNAN,Perpignan-Pyrenees Trafic,FR50224,Urbaine,PM10,30.4,2023-10-02,Trafic
+111,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,NOX,7.8,2023-09-24,Fond
+112,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,NOX,16.6,2023-09-25,Fond
+113,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,NOX,134.5,2023-09-24,Trafic
+114,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,59.9,2023-08-31,Fond
+115,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,NOX,162.8,2023-09-25,Trafic
+116,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,NOX,0.46,2023-09-24,Fond
+117,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,NOX,,2023-09-24,Fond
+118,PERPIGNAN,Perpignan-Pyrenees Trafic,FR50224,Urbaine,NOX,57.0,2023-09-24,Trafic
+119,TOULOUSE,Station Pedagogique,FR50058,Urbaine,O3,47.3,2023-09-24,Fond
+120,SAZE,Saze - rural,FR50216,Rurale proche Zone Urbaine,O3,65.1,2023-09-24,Industrielle
+121,TOULOUSE,Station Pedagogique,FR50058,Urbaine,O3,58.3,2023-09-25,Fond
+122,SAZE,Saze - rural,FR50216,Rurale proche Zone Urbaine,O3,59.9,2023-09-25,Industrielle
+123,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,52.3,2023-09-01,Fond
+124,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,58.9,2023-09-02,Fond
+125,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,73.5,2023-09-03,Fond
+126,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,,2023-09-04,Fond
+127,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,,2023-09-05,Fond
+128,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,50.2,2023-09-11,Fond
+129,LUNEL-VIEL,Lunel-Viel - Industriel,FR50206,Périurbaine,NO2,7.9,2023-09-24,Industrielle
+130,TOULOUSE,Toulouse-Berthelot Urbain,FR50030,Urbaine,NOX,5.7,2023-10-02,Fond
+131,ALBI,Albi Urbain,FR50026,Urbaine,NOX,10.0,2023-10-02,Fond
+132,TOULOUSE,Toulouse-SETMI Eisenhower Industriel,FR50039,Urbaine,NOX,20.1,2023-10-02,Industrielle
+133,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM2.5,4.3,2023-09-24,Trafic
+134,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,NO,0.5,2023-09-24,Fond
+135,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,NO,1.5,2023-09-25,Fond
+136,MONTPELLIER,Montpellier - Saint Denis Trafic,FR50202,Urbaine,NO2,9.1,2023-09-24,Trafic
+137,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM2.5,3.7,2023-09-24,Trafic
+138,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,NOX,5.4,2023-10-02,Fond
+139,MIRAMONT-DE-COMMINGES,Saint Gaudens-Miramont Industriel,FR50015,Urbaine,O3,33.3,2023-09-24,Industrielle
+140,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM2.5,3.2,2023-09-24,Fond
+141,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM2.5,5.4,2023-09-25,Trafic
+142,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM2.5,3.9,2023-09-24,Fond
+143,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM2.5,5.3,2023-09-25,Trafic
+144,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,PM2.5,6.7,2023-09-24,Trafic
+145,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM2.5,5.0,2023-09-25,Fond
+146,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,PM2.5,6.7,2023-09-25,Trafic
+147,TOULOUSE,Toulouse-Berthelot Urbain,FR50030,Urbaine,PM2.5,5.7,2023-09-24,Fond
+148,TOULOUSE,Toulouse-Berthelot Urbain,FR50030,Urbaine,PM2.5,5.5,2023-09-25,Fond
+149,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,PM2.5,2.3,2023-09-24,Fond
+150,AUCH,AUCH ST EXUPERY,FR50833,Urbaine,PM2.5,3.8,2023-09-24,Fond
+151,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,PM2.5,5.7,2023-09-24,Fond
+152,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,PM2.5,5.3,2023-09-25,Fond
+153,TOULOUSE,Toulouse - Rte Albi Trafic,FR50054,Urbaine,NO,22.5,2023-09-24,Trafic
+154,TOULOUSE,Toulouse - Rte Albi Trafic,FR50054,Urbaine,NO,49.6,2023-09-25,Trafic
+155,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,NO,0.4,2023-09-24,Fond
+156,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM2.5,5.5,2023-09-24,Fond
+157,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM2.5,5.5,2023-09-25,Fond
+158,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM2.5,2.4,2023-09-24,Fond
+159,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM2.5,2.6,2023-09-25,Fond
+160,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM2.5,3.9,2023-09-24,Fond
+161,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,NO,2.5,2023-09-25,Fond
+162,MONTPELLIER,Montpellier - Chaptal Urbain,FR50201,Urbaine,NO,1.0,2023-09-24,Fond
+163,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,NOX,8.9,2023-10-02,Fond
+164,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,47.8,2023-09-13,Fond
+165,LUNEL-VIEL,Lunel-Viel - Industriel,FR50206,Périurbaine,PM2.5,3.1,2023-09-24,Industrielle
+166,BLAGNAC,Blagnac Aéroport Piste ,FR50043,Périurbaine,PM2.5,3.8,2023-09-25,Trafic
+167,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM2.5,4.3,2023-09-24,Fond
+168,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM2.5,4.9,2023-09-25,Fond
+169,BLAGNAC,Blagnac Aéroport Piste ,FR50043,Périurbaine,NO,3.3,2023-09-24,Trafic
+170,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,NO,8.2,2023-09-24,Trafic
+171,MONTPELLIER,Montpellier - Chaptal Urbain,FR50201,Urbaine,NO,2.2,2023-09-25,Fond
+172,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,85.5,2023-09-08,Fond
+173,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,81.1,2023-09-09,Fond
+174,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,77.2,2023-09-10,Fond
+175,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,45.9,2023-09-12,Fond
+176,AGDE,Agathois-Piscénois - Périurbain,FR50210,Périurbaine,NO,0.3,2023-09-24,Fond
+177,AGDE,Agathois-Piscénois - Périurbain,FR50210,Périurbaine,NO,0.8,2023-09-25,Fond
+178,LUNEL-VIEL,Lunel-Viel - Industriel,FR50206,Périurbaine,NO,3.1,2023-09-24,Industrielle
+179,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,NO2,10.4,2023-09-24,Fond
+180,MONTPELLIER,Montpellier - Chaptal Urbain,FR50201,Urbaine,NO2,22.8,2023-09-24,Fond
+181,LUNEL-VIEL,Lunel-Viel - Industriel,FR50206,Périurbaine,PM2.5,4.0,2023-09-25,Industrielle
+182,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,NOX,25.7,2023-10-02,Fond
+183,TOULOUSE,Toulouse-Berthelot Urbain,FR50030,Urbaine,NO,2.9,2023-09-24,Fond
+184,ALBI,Albi Urbain,FR50026,Urbaine,NO,0.8,2023-09-24,Fond
+185,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,59.1,2022-09-22,Fond
+186,BESSIERES,Bessières-ECONOTRE Industriel,FR50047,Rurale proche Zone Urbaine,PM10,16.5,2023-08-22,Industrielle
+187,BESSIERES,Bessières-ECONOTRE Industriel,FR50047,Rurale proche Zone Urbaine,PM10,17.2,2023-08-23,Industrielle
+188,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,73.6,2022-09-23,Fond
+189,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,80.0,2022-09-24,Fond
+190,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,66.2,2022-09-25,Fond
+191,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,63.8,2022-09-26,Fond
+192,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,68.5,2022-09-27,Fond
+193,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,62.9,2022-09-28,Fond
+194,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,59.1,2022-09-29,Fond
+195,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,49.9,2022-09-30,Fond
+196,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,54.2,2022-10-01,Fond
+197,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,50.8,2022-10-02,Fond
+198,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,46.2,2022-10-03,Fond
+199,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,43.5,2022-10-04,Fond
+200,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,50.2,2022-10-05,Fond
+201,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,40.5,2022-10-06,Fond
+202,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,50.8,2022-10-07,Fond
+203,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,36.9,2022-10-08,Fond
+204,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,NO2,9.1,2023-09-25,Fond
+205,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,NO2,59.5,2023-09-25,Trafic
+206,TOULOUSE,Toulouse-SETMI Eisenhower Industriel,FR50039,Urbaine,NO,3.6,2023-09-24,Industrielle
+207,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,NO,1.0,2023-09-24,Fond
+208,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,NO,4.9,2023-09-25,Fond
+209,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,NO2,58.0,2023-09-24,Trafic
+210,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,NO2,,2023-09-25,Fond
+211,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,NO2,,2023-09-24,Fond
+212,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,NO2,,2023-09-25,Fond
+213,PERPIGNAN,Perpignan-Pyrenees Trafic,FR50224,Urbaine,NO2,34.9,2023-09-24,Trafic
+214,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,NO,50.2,2023-09-24,Trafic
+215,AUCH,AUCH ST EXUPERY,FR50833,Urbaine,NO2,7.6,2023-09-24,Fond
+216,BLAGNAC,Blagnac Aéroport Piste ,FR50043,Périurbaine,NO2,21.5,2023-09-24,Trafic
+217,TOULOUSE,Toulouse - Rte Albi Trafic,FR50054,Urbaine,NOX,74.0,2023-10-02,Trafic
+218,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,NO2,66.6,2023-09-25,Trafic
+219,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,NOX,12.2,2023-10-02,Fond
+220,MONTPELLIER,Montpellier - Chaptal Urbain,FR50201,Urbaine,NOX,14.0,2023-10-02,Fond
+221,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,NO2,0.24,2023-09-24,Fond
+222,AGDE,Agathois-Piscénois - Périurbain,FR50210,Périurbaine,NOX,4.7,2023-10-02,Fond
+223,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,NO2,0.4,2023-09-25,Fond
+224,LUNEL-VIEL,Lunel-Viel - Industriel,FR50206,Périurbaine,NOX,12.0,2023-10-02,Industrielle
+225,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,45.4,2023-09-21,Fond
+226,MONTGISCARD,Montgiscard Périurbain,FR50041,Périurbaine,NO2,5.4,2023-09-24,Fond
+227,MONTGISCARD,Montgiscard Périurbain,FR50041,Périurbaine,NO2,8.8,2023-09-25,Fond
+228,MONTPELLIER,Montpellier - Saint Denis Trafic,FR50202,Urbaine,NO2,14.8,2023-09-25,Trafic
+229,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,NO2,11.2,2023-09-24,Fond
+230,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,NO2,20.9,2023-09-25,Fond
+231,PERPIGNAN,Perpignan-Pyrenees Trafic,FR50224,Urbaine,NO2,53.1,2023-09-25,Trafic
+232,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,NO2,18.3,2023-09-24,Trafic
+233,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,NO2,33.7,2023-09-25,Trafic
+234,BLAGNAC,Blagnac Aéroport Piste ,FR50043,Périurbaine,NO2,21.9,2023-09-25,Trafic
+235,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,NO2,23.3,2023-09-24,Trafic
+236,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,NO2,25.2,2023-09-25,Trafic
+237,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,NO2,6.3,2023-09-24,Fond
+238,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,NO2,43.1,2023-09-24,Trafic
+239,SAINT-GAUDENS,Saint Gaudens-Daurat Industriel,FR50016,Urbaine,SO2,-0.6,2023-09-24,Industrielle
+240,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,60.5,2022-10-09,Fond
+241,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,45.4,2022-10-10,Fond
+242,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,36.0,2022-10-11,Fond
+243,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,39.2,2022-10-12,Fond
+244,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,21.9,2022-10-13,Fond
+245,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,41.7,2022-10-14,Fond
+246,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,33.6,2022-10-15,Fond
+247,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,71.7,2022-10-16,Fond
+248,BESSIERES,Bessières-ECONOTRE Industriel,FR50047,Rurale proche Zone Urbaine,PM10,21.7,2023-08-24,Industrielle
+249,BESSIERES,Bessières-ECONOTRE Industriel,FR50047,Rurale proche Zone Urbaine,PM10,21.3,2023-08-25,Industrielle
+250,SAINT-GAUDENS,Saint Gaudens-Daurat Industriel,FR50016,Urbaine,H2S,-0.3,2023-09-25,Industrielle
+251,TOULOUSE,Toulouse-Berthelot Urbain,FR50030,Urbaine,O3,89.1,2023-10-02,Fond
+252,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,67.1,2022-10-17,Fond
+253,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,46.5,2022-10-18,Fond
+254,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,38.4,2022-10-19,Fond
+255,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,70.5,2022-10-20,Fond
+256,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,64.5,2022-10-21,Fond
+257,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,48.5,2022-10-22,Fond
+258,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.2,2022-10-23,Fond
+259,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,57.3,2022-10-24,Fond
+260,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,44.0,2022-10-25,Fond
+261,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,61.7,2022-10-26,Fond
+262,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,53.3,2022-10-27,Fond
+263,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,43.8,2022-10-28,Fond
+264,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,33.5,2022-10-29,Fond
+265,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,57.9,2022-10-30,Fond
+266,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,62.8,2022-10-31,Fond
+267,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,51.2,2022-11-01,Fond
+268,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,31.5,2022-11-02,Fond
+269,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,36.5,2022-11-03,Fond
+270,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,61.1,2022-11-04,Fond
+271,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,47.2,2022-11-05,Fond
+272,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,29.9,2022-11-06,Fond
+273,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,24.0,2022-11-07,Fond
+274,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,65.9,2022-11-08,Fond
+275,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,73.0,2022-11-09,Fond
+276,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,51.6,2022-11-10,Fond
+277,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,37.1,2022-11-11,Fond
+278,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,22.2,2022-11-12,Fond
+279,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,25.4,2022-11-13,Fond
+280,BLAGNAC,Blagnac Aéroport Piste ,FR50043,Périurbaine,NO,6.7,2023-09-25,Trafic
+281,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,NO2,7.7,2023-09-25,Fond
+282,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,NO2,18.4,2023-09-25,Fond
+283,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM2.5,3.6,2023-09-25,Fond
+284,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM2.5,8.4,2023-09-25,Trafic
+285,MONTPELLIER,Montpelier Pere Louis Trafic,FR50227,Urbaine,NOX,125.7,2023-09-25,Trafic
+286,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,NO,8.2,2023-09-25,Trafic
+287,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,PM10,28.5,2023-09-25,Trafic
+288,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,12.4,2023-09-25,Trafic
+289,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,NO,62.9,2023-09-25,Trafic
+290,BLAGNAC,Blagnac Aéroport Piste ,FR50043,Périurbaine,NOX,32.2,2023-09-25,Trafic
+291,AGDE,Agathois-Piscénois - Périurbain,FR50210,Périurbaine,NOX,6.2,2023-09-25,Fond
+292,LUNEL-VIEL,Lunel-Viel - Industriel,FR50206,Périurbaine,NOX,14.0,2023-09-25,Industrielle
+293,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,NOX,30.2,2023-09-25,Fond
+294,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,NOX,,2023-09-25,Fond
+295,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,O3,54.6,2023-09-25,Fond
+296,MONTGISCARD,Montgiscard Périurbain,FR50041,Périurbaine,O3,68.1,2023-09-25,Fond
+297,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM2.5,5.2,2023-09-25,Fond
+298,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,NO,58.7,2023-09-25,Trafic
+299,TOULOUSE,Toulouse-Berthelot Urbain,FR50030,Urbaine,NO,7.5,2023-09-25,Fond
+300,TOULOUSE,Toulouse-SETMI Eisenhower Industriel,FR50039,Urbaine,PM10,15.3,2023-09-25,Industrielle
+301,AUCH,AUCH ST EXUPERY,FR50833,Urbaine,NO,3.2,2023-09-25,Fond
+302,GAUDONVILLE,Gaudonville Rural,FR50029,Rurale Régionale,O3,77.2,2023-09-25,Fond
+303,MIRAMONT-DE-COMMINGES,Saint Gaudens-Miramont Industriel,FR50015,Urbaine,H2S,0.5,2023-09-24,Industrielle
+304,MIRAMONT-DE-COMMINGES,Saint Gaudens-Miramont Industriel,FR50015,Urbaine,H2S,0.3,2023-09-25,Industrielle
+305,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,PM10,12.5,2023-09-25,Trafic
+306,MIRAMONT-DE-COMMINGES,Saint Gaudens-Miramont Industriel,FR50015,Urbaine,O3,43.9,2023-09-25,Industrielle
+307,ALBI,Albi Urbain,FR50026,Urbaine,NO,3.3,2023-09-25,Fond
+308,MONTPELLIER,Montpelier Pere Louis Trafic,FR50227,Urbaine,NO,49.5,2023-09-25,Trafic
+309,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM10,6.8,2023-09-25,Fond
+310,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,NOX,,2023-09-25,Fond
+311,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,42.3,2022-11-14,Fond
+312,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,45.5,2022-11-15,Fond
+313,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,30.1,2022-11-16,Fond
+314,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,31.0,2022-11-17,Fond
+315,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,46.4,2022-11-18,Fond
+316,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,59.0,2022-11-19,Fond
+317,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,65.0,2022-11-20,Fond
+318,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,PM10,18.4,2023-08-22,Fond
+319,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,PM10,26.7,2023-08-23,Fond
+320,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,PM10,24.0,2023-08-24,Fond
+321,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,PM10,21.7,2023-08-25,Fond
+322,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,PM10,7.6,2023-08-26,Fond
+323,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,PM10,4.7,2023-08-27,Fond
+324,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,PM10,5.2,2023-08-28,Fond
+325,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM10,18.1,2023-08-22,Fond
+326,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM10,22.6,2023-08-23,Fond
+327,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM10,23.9,2023-08-24,Fond
+328,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM10,21.6,2023-08-25,Fond
+329,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM10,7.4,2023-08-26,Fond
+330,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM10,4.6,2023-08-27,Fond
+331,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM10,5.7,2023-08-28,Fond
+332,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM10,10.1,2023-08-29,Fond
+333,ALBI,Albi Urbain,FR50026,Urbaine,PM10,19.6,2023-08-22,Fond
+334,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,24.8,2022-11-21,Fond
+335,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,63.3,2022-11-22,Fond
+336,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,45.4,2022-11-23,Fond
+337,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,40.8,2022-11-24,Fond
+338,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,38.6,2022-11-25,Fond
+339,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,43.0,2022-11-26,Fond
+340,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,32.4,2022-11-27,Fond
+341,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,37.0,2022-11-28,Fond
+342,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,46.7,2022-11-29,Fond
+343,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,27.4,2022-11-30,Fond
+344,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,30.4,2022-12-01,Fond
+345,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,15.5,2022-12-02,Fond
+346,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,27.5,2022-12-03,Fond
+347,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,21.2,2022-12-04,Fond
+348,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,15.0,2022-12-05,Fond
+349,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,17.6,2022-12-06,Fond
+350,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,25.5,2022-12-07,Fond
+351,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,30.9,2022-12-08,Fond
+352,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,29.7,2022-12-09,Fond
+353,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,23.7,2022-12-10,Fond
+354,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,24.5,2022-12-11,Fond
+355,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,15.7,2022-12-12,Fond
+356,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,31.8,2022-12-13,Fond
+357,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,24.6,2022-12-14,Fond
+358,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,23.0,2022-12-15,Fond
+359,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,17.9,2022-12-16,Fond
+360,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,17.9,2022-12-17,Fond
+361,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,26.0,2022-12-18,Fond
+362,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,61.4,2022-12-19,Fond
+363,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,76.5,2022-12-20,Fond
+364,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,40.0,2022-12-21,Fond
+365,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM10,6.4,2023-08-30,Fond
+366,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,O3,78.3,2023-10-02,Fond
+367,MONTGISCARD,Montgiscard Périurbain,FR50041,Périurbaine,O3,92.8,2023-10-02,Fond
+368,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,O3,100.5,2023-10-02,Fond
+369,TOULOUSE,Station Pedagogique,FR50058,Urbaine,O3,92.6,2023-10-02,Fond
+370,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,O3,49.3,2023-10-02,Fond
+371,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,73.7,2023-10-02,Fond
+372,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,33.5,2022-12-22,Fond
+373,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,36.3,2022-12-23,Fond
+374,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,17.8,2022-12-24,Fond
+375,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,27.9,2022-12-25,Fond
+376,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,33.5,2022-12-26,Fond
+377,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,PM10,17.7,2023-08-22,Fond
+378,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,PM10,21.7,2023-08-23,Fond
+379,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,PM10,16.9,2023-08-24,Fond
+380,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,PM10,22.0,2023-08-25,Fond
+381,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,PM10,11.0,2023-08-26,Fond
+382,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,PM10,4.6,2023-08-27,Fond
+383,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,PM10,5.2,2023-08-28,Fond
+384,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,PM10,9.0,2023-08-29,Fond
+385,TOULOUSE,Toulouse-SETMI Chapitre Industriel,FR50040,Urbaine,PM10,21.8,2023-08-22,Industrielle
+386,TOULOUSE,Toulouse-SETMI Chapitre Industriel,FR50040,Urbaine,PM10,25.8,2023-08-23,Industrielle
+387,TOULOUSE,Toulouse-SETMI Chapitre Industriel,FR50040,Urbaine,PM10,26.5,2023-08-24,Industrielle
+388,TOULOUSE,Toulouse-SETMI Chapitre Industriel,FR50040,Urbaine,PM10,28.5,2023-08-25,Industrielle
+389,TOULOUSE,Toulouse-SETMI Chapitre Industriel,FR50040,Urbaine,PM10,10.6,2023-08-26,Industrielle
+390,TOULOUSE,Toulouse-SETMI Chapitre Industriel,FR50040,Urbaine,PM10,6.9,2023-08-27,Industrielle
+391,TOULOUSE,Toulouse-SETMI Chapitre Industriel,FR50040,Urbaine,PM10,7.9,2023-08-28,Industrielle
+392,TOULOUSE,Toulouse-SETMI Chapitre Industriel,FR50040,Urbaine,PM10,14.3,2023-08-29,Industrielle
+393,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,24.7,2022-12-27,Fond
+394,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,18.6,2022-12-28,Fond
+395,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,27.0,2022-12-29,Fond
+396,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,12.7,2022-12-30,Fond
+397,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,40.5,2022-12-31,Fond
+398,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,69.5,2023-01-01,Fond
+399,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,70.0,2023-01-02,Fond
+400,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,26.0,2023-01-03,Fond
+401,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,20.5,2023-01-04,Fond
+402,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,41.3,2023-01-05,Fond
+403,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,18.4,2023-01-06,Fond
+404,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,47.4,2023-01-07,Fond
+405,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,37.8,2023-01-08,Fond
+406,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,72.9,2023-01-09,Fond
+407,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,47.6,2023-01-10,Fond
+408,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,39.7,2023-01-11,Fond
+409,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,42.4,2023-01-12,Fond
+410,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,53.2,2023-01-13,Fond
+411,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,26.9,2023-01-14,Fond
+412,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,46.1,2023-01-15,Fond
+413,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,54.1,2023-01-16,Fond
+414,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,53.3,2023-01-17,Fond
+415,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,62.6,2023-01-18,Fond
+416,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,55.4,2023-01-19,Fond
+417,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,54.6,2023-01-20,Fond
+418,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,61.7,2023-01-21,Fond
+419,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,52.8,2023-01-22,Fond
+420,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,29.0,2023-01-23,Fond
+421,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,23.1,2023-01-24,Fond
+422,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,32.0,2023-01-25,Fond
+423,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,31.5,2023-01-26,Fond
+424,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,34.0,2023-01-27,Fond
+425,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM2.5,12.6,2023-10-02,Fond
+426,BLAGNAC,Blagnac Aéroport Piste ,FR50043,Périurbaine,PM2.5,6.9,2023-10-02,Trafic
+427,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM2.5,9.4,2023-10-02,Fond
+428,LUNEL-VIEL,Lunel-Viel - Industriel,FR50206,Périurbaine,PM2.5,12.6,2023-10-02,Industrielle
+429,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM2.5,9.8,2023-10-02,Trafic
+430,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM2.5,13.0,2023-10-02,Fond
+431,TOULOUSE,Toulouse-Berthelot Urbain,FR50030,Urbaine,PM2.5,9.7,2023-10-02,Fond
+432,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,32.1,2023-01-28,Fond
+433,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,25.4,2023-01-29,Fond
+434,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,36.5,2023-01-30,Fond
+435,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,45.8,2023-01-31,Fond
+436,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,32.3,2023-02-01,Fond
+437,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,41.9,2023-02-02,Fond
+438,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,40.3,2023-02-03,Fond
+439,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,57.4,2023-02-04,Fond
+440,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,56.7,2023-02-05,Fond
+441,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,55.0,2023-02-06,Fond
+442,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,PM10,20.5,2023-08-22,Trafic
+443,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,PM10,24.3,2023-08-23,Trafic
+444,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,PM10,27.5,2023-08-24,Trafic
+445,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,PM10,23.1,2023-08-25,Trafic
+446,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,PM10,8.9,2023-08-26,Trafic
+447,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,PM10,5.7,2023-08-27,Trafic
+448,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,PM10,6.3,2023-08-28,Trafic
+449,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,PM10,11.4,2023-08-29,Trafic
+450,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,42.3,2023-02-07,Fond
+451,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,40.1,2023-02-08,Fond
+452,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,49.4,2023-02-09,Fond
+453,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,30.3,2023-02-10,Fond
+454,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,29.2,2023-02-11,Fond
+455,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,36.6,2023-02-12,Fond
+456,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,36.0,2023-02-13,Fond
+457,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,42.6,2023-02-14,Fond
+458,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,51.3,2023-02-15,Fond
+459,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,33.0,2023-02-16,Fond
+460,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,30.5,2023-02-17,Fond
+461,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,29.5,2023-02-18,Fond
+462,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,33.0,2023-02-19,Fond
+463,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,36.3,2023-02-20,Fond
+464,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,51.0,2023-02-21,Fond
+465,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,48.0,2023-02-22,Fond
+466,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,,2023-02-23,Fond
+467,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,,2023-02-24,Fond
+468,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,,2023-02-25,Fond
+469,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,,2023-02-26,Fond
+470,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,,2023-02-27,Fond
+471,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,46.4,2023-02-28,Fond
+472,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,48.4,2023-03-01,Fond
+473,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,44.5,2023-03-02,Fond
+474,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,42.7,2023-03-03,Fond
+475,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,60.8,2023-03-04,Fond
+476,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,68.7,2023-03-05,Fond
+477,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,54.5,2023-03-06,Fond
+478,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,52.9,2023-03-07,Fond
+479,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,35.8,2023-03-08,Fond
+480,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,36.4,2023-03-09,Fond
+481,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,72.6,2023-03-10,Fond
+482,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,55.3,2023-03-11,Fond
+483,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,72.0,2023-03-12,Fond
+484,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,51.1,2023-03-13,Fond
+485,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,NO,,2023-10-02,Fond
+486,BLAGNAC,Blagnac Aéroport Piste ,FR50043,Périurbaine,NO2,8.0,2023-10-02,Trafic
+487,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,NO,5.9,2023-10-02,Fond
+488,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,NO,5.9,2023-10-02,Trafic
+489,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,NO,0.7,2023-10-02,Fond
+490,MONTPELLIER,Montpellier - Chaptal Urbain,FR50201,Urbaine,NO,0.5,2023-10-02,Fond
+491,TOULOUSE,Toulouse-SETMI Eisenhower Industriel,FR50039,Urbaine,PM10,16.8,2023-09-09,Industrielle
+492,AGDE,Agathois-Piscénois - Périurbain,FR50210,Périurbaine,NO,0.4,2023-10-02,Fond
+493,LUNEL-VIEL,Lunel-Viel - Industriel,FR50206,Périurbaine,NO,3.5,2023-10-02,Industrielle
+494,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,NO,4.9,2023-10-02,Fond
+495,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,NO2,14.2,2023-10-02,Trafic
+496,TOULOUSE,Toulouse-Berthelot Urbain,FR50030,Urbaine,NO2,4.9,2023-10-02,Fond
+497,ALBI,Albi Urbain,FR50026,Urbaine,NO2,8.2,2023-10-02,Fond
+498,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,NO,0.8,2023-10-02,Fond
+499,TOULOUSE,Toulouse-SETMI Eisenhower Industriel,FR50039,Urbaine,PM10,15.2,2023-09-10,Industrielle
+500,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,PM10,14.0,2023-08-22,Fond
+501,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,PM10,17.4,2023-08-23,Fond
+502,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,PM10,20.7,2023-08-24,Fond
+503,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,PM10,14.0,2023-08-25,Fond
+504,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,PM10,6.5,2023-08-26,Fond
+505,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,PM10,3.4,2023-08-27,Fond
+506,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,PM10,3.5,2023-08-28,Fond
+507,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,PM10,8.7,2023-08-29,Fond
+508,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM10,11.6,2023-08-22,Fond
+509,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM10,15.8,2023-08-23,Fond
+510,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM10,18.9,2023-08-24,Fond
+511,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM10,16.8,2023-08-25,Fond
+512,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM10,6.3,2023-08-26,Fond
+513,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM10,5.2,2023-08-27,Fond
+514,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM10,4.9,2023-08-28,Fond
+515,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM10,9.3,2023-08-29,Fond
+516,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,82.7,2023-03-14,Fond
+517,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,62.5,2023-03-15,Fond
+518,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.1,2023-03-16,Fond
+519,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,94.0,2023-03-17,Fond
+520,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,93.8,2023-03-18,Fond
+521,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,81.0,2023-03-19,Fond
+522,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,67.3,2023-03-20,Fond
+523,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,47.5,2023-03-21,Fond
+524,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,50.5,2023-03-22,Fond
+525,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,71.5,2023-03-23,Fond
+526,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,76.4,2023-03-24,Fond
+527,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,79.9,2023-03-25,Fond
+528,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,75.0,2023-03-26,Fond
+529,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,87.3,2023-03-27,Fond
+530,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,72.7,2023-03-28,Fond
+531,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,76.1,2023-03-29,Fond
+532,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.4,2023-03-30,Fond
+533,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,73.3,2023-03-31,Fond
+534,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,86.2,2023-04-01,Fond
+535,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,76.2,2023-04-02,Fond
+536,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,63.9,2023-04-03,Fond
+537,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,69.0,2023-04-04,Fond
+538,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,66.8,2023-04-05,Fond
+539,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,65.8,2023-04-06,Fond
+540,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,71.3,2023-04-07,Fond
+541,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.3,2023-04-08,Fond
+542,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,70.2,2023-04-09,Fond
+543,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,76.0,2023-04-10,Fond
+544,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.9,2023-04-11,Fond
+545,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,65.1,2023-04-12,Fond
+546,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,86.6,2023-04-13,Fond
+547,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,81.3,2023-04-14,Fond
+548,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,90.4,2023-04-15,Fond
+549,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,89.0,2023-04-16,Fond
+550,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,69.4,2023-04-17,Fond
+551,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,NO2,9.6,2023-10-02,Trafic
+552,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,NO2,34.5,2023-10-02,Trafic
+553,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,NO2,14.8,2023-10-02,Fond
+554,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,NO2,2.6,2023-10-02,Fond
+555,MONTPELLIER,Montpelier Pere Louis Trafic,FR50227,Urbaine,NO2,37.3,2023-10-02,Trafic
+556,TOULOUSE,Toulouse - Rte Albi Trafic,FR50054,Urbaine,NO2,32.0,2023-10-02,Trafic
+557,MONTPELLIER,Montpellier - Saint Denis Trafic,FR50202,Urbaine,NO2,9.0,2023-10-02,Trafic
+558,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,NO2,14.4,2023-10-02,Fond
+559,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,NO2,,2023-10-02,Fond
+560,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,NO2,,2023-10-02,Fond
+561,PERPIGNAN,Perpignan-Pyrenees Trafic,FR50224,Urbaine,NO2,36.0,2023-10-02,Trafic
+562,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,NO2,0.4,2023-10-02,Fond
+563,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,NO2,14.9,2023-10-02,Trafic
+564,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,NO2,42.9,2023-10-02,Trafic
+565,AUCH,AUCH ST EXUPERY,FR50833,Urbaine,NO2,7.5,2023-10-02,Fond
+566,SAINT-GAUDENS,Saint Gaudens-Daurat Industriel,FR50016,Urbaine,SO2,1.5,2023-10-02,Industrielle
+567,MIRAMONT-DE-COMMINGES,Saint Gaudens-Miramont Industriel,FR50015,Urbaine,SO2,0.2,2023-10-02,Industrielle
+568,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,64.8,2023-04-18,Fond
+569,TOULOUSE,Toulouse - Rte Albi Trafic,FR50054,Urbaine,PM10,17.7,2023-08-22,Trafic
+570,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,PM10,18.5,2023-08-22,Fond
+571,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,PM10,20.2,2023-08-23,Fond
+572,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,PM10,25.1,2023-08-24,Fond
+573,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,PM10,8.4,2023-08-25,Fond
+574,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,PM10,6.4,2023-08-26,Fond
+575,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,PM10,3.3,2023-08-27,Fond
+576,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,PM10,3.4,2023-08-28,Fond
+577,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,PM10,8.6,2023-08-29,Fond
+578,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,PM2.5,5.1,2023-10-18,Fond
+579,TOULOUSE,Toulouse-Mazades Urbain,FR50021,Urbaine,PM2.5,8.1,2023-10-18,Fond
+580,SAINT-GAUDENS,Saint Gaudens-Daurat Industriel,FR50016,Urbaine,H2S,2.5,2023-10-02,Industrielle
+581,MIRAMONT-DE-COMMINGES,Saint Gaudens-Miramont Industriel,FR50015,Urbaine,H2S,-1.2,2023-10-02,Industrielle
+582,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,PM2.5,6.6,2023-10-18,Fond
+583,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,PM10,32.7,2023-08-22,Trafic
+584,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,PM10,30.8,2023-08-23,Trafic
+585,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,PM10,31.5,2023-08-24,Trafic
+586,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,PM10,36.5,2023-08-25,Trafic
+587,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,PM10,21.5,2023-08-26,Trafic
+588,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,PM10,14.9,2023-08-27,Trafic
+589,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,PM10,19.0,2023-08-28,Trafic
+590,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,PM10,22.4,2023-08-29,Trafic
+591,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,77.3,2023-04-19,Fond
+592,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,79.5,2023-04-20,Fond
+593,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,97.4,2023-04-21,Fond
+594,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,100.1,2023-04-22,Fond
+595,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,62.6,2023-04-23,Fond
+596,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.6,2023-04-24,Fond
+597,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,83.5,2023-04-25,Fond
+598,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,62.3,2023-04-26,Fond
+599,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,74.3,2023-04-27,Fond
+600,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,75.2,2023-04-28,Fond
+601,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,58.3,2023-04-29,Fond
+602,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,47.0,2023-04-30,Fond
+603,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,71.8,2023-05-01,Fond
+604,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,90.9,2023-05-02,Fond
+605,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,94.9,2023-05-03,Fond
+606,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,86.8,2023-05-04,Fond
+607,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,74.2,2023-05-05,Fond
+608,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,76.0,2023-05-06,Fond
+609,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,67.0,2023-05-07,Fond
+610,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,69.0,2023-05-08,Fond
+611,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,50.0,2023-05-09,Fond
+612,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,81.1,2023-05-10,Fond
+613,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.5,2023-05-11,Fond
+614,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,56.9,2023-05-12,Fond
+615,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,58.5,2023-05-13,Fond
+616,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,57.3,2023-05-14,Fond
+617,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,101.5,2023-05-15,Fond
+618,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,90.2,2023-05-16,Fond
+619,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,83.6,2023-05-17,Fond
+620,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,73.3,2023-05-18,Fond
+621,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,70.8,2023-05-19,Fond
+622,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,46.7,2023-05-20,Fond
+623,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,48.0,2023-05-21,Fond
+624,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,53.1,2023-05-22,Fond
+625,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,74.4,2023-05-23,Fond
+626,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,,2023-08-22,Trafic
+627,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,PM10,6.0,2023-08-30,Fond
+628,NIMES,Nîmes Sud - Urbain,FR50211,Urbaine,PM2.5,10.1,2023-10-18,Fond
+629,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM2.5,10.7,2023-10-18,Trafic
+630,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM2.5,7.2,2023-10-18,Fond
+631,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM2.5,,2023-10-18,Fond
+632,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,24.5,2023-08-23,Trafic
+633,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,31.6,2023-08-24,Trafic
+634,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,,2023-08-25,Trafic
+635,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,20.8,2023-08-26,Trafic
+636,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,11.1,2023-08-27,Trafic
+637,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,8.7,2023-08-28,Trafic
+638,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,4.4,2023-08-29,Trafic
+639,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM10,,2023-08-22,Trafic
+640,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM10,,2023-08-23,Trafic
+641,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM10,,2023-08-24,Trafic
+642,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM10,,2023-08-25,Trafic
+643,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM10,,2023-08-26,Trafic
+644,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM10,,2023-08-27,Trafic
+645,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM10,,2023-08-28,Trafic
+646,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM10,,2023-08-29,Trafic
+647,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,61.1,2023-05-24,Fond
+648,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,77.9,2023-05-25,Fond
+649,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,80.2,2023-05-26,Fond
+650,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,69.3,2023-05-27,Fond
+651,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,73.9,2023-05-28,Fond
+652,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,64.4,2023-05-29,Fond
+653,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,83.3,2023-05-30,Fond
+654,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,79.5,2023-05-31,Fond
+655,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,88.4,2023-06-01,Fond
+656,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,91.1,2023-06-02,Fond
+657,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,87.7,2023-06-03,Fond
+658,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,75.8,2023-06-04,Fond
+659,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,64.3,2023-06-05,Fond
+660,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,74.4,2023-06-06,Fond
+661,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,75.3,2023-06-07,Fond
+662,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,73.7,2023-06-08,Fond
+663,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,77.6,2023-06-09,Fond
+664,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,64.1,2023-06-10,Fond
+665,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,63.2,2023-06-11,Fond
+666,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,70.5,2023-06-12,Fond
+667,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,61.4,2023-06-13,Fond
+668,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,85.7,2023-06-14,Fond
+669,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,109.3,2023-06-15,Fond
+670,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,124.4,2023-06-16,Fond
+671,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,106.9,2023-06-17,Fond
+672,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,108.6,2023-06-18,Fond
+673,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,104.2,2023-06-19,Fond
+674,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,108.1,2023-06-20,Fond
+675,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,108.5,2023-06-21,Fond
+676,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,96.4,2023-06-22,Fond
+677,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,80.3,2023-06-23,Fond
+678,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,96.9,2023-06-24,Fond
+679,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,95.4,2023-06-25,Fond
+680,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,96.6,2023-06-26,Fond
+681,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM10,19.2,2023-08-22,Fond
+682,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM10,26.6,2023-08-23,Fond
+683,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM10,20.1,2023-08-24,Fond
+684,TOULOUSE,Toulouse-SETMI Chapitre Industriel,FR50040,Urbaine,PM10,25.9,2023-10-02,Industrielle
+685,TOULOUSE,Toulouse-SETMI Eisenhower Industriel,FR50039,Urbaine,PM10,20.1,2023-10-02,Industrielle
+686,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,11.0,2023-08-30,Trafic
+687,BLAGNAC,Blagnac Aéroport Trafic ,FR50044,Périurbaine,PM10,23.3,2023-10-02,Trafic
+688,NIMES,Nîmes - Planas - Trafic,FR50212,Urbaine,PM10,28.1,2023-10-02,Trafic
+689,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,PM10,19.1,2023-10-02,Trafic
+690,AUCH,AUCH ST EXUPERY,FR50833,Urbaine,PM10,15.7,2023-10-02,Fond
+691,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM10,18.3,2023-08-25,Fond
+692,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM10,9.1,2023-08-26,Fond
+693,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM10,3.8,2023-08-27,Fond
+694,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM10,4.4,2023-08-28,Fond
+695,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,PM10,7.3,2023-08-29,Fond
+696,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,PM10,17.1,2023-08-22,Fond
+697,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,PM10,21.9,2023-08-23,Fond
+698,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,PM10,23.9,2023-08-24,Fond
+699,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,PM10,20.6,2023-08-25,Fond
+700,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,PM10,6.8,2023-08-26,Fond
+701,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,PM10,5.0,2023-08-27,Fond
+702,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,PM10,5.7,2023-08-28,Fond
+703,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,PM10,11.0,2023-08-29,Fond
+704,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,82.1,2023-06-27,Fond
+705,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,87.6,2023-06-28,Fond
+706,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,81.6,2023-06-29,Fond
+707,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,68.3,2023-06-30,Fond
+708,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,60.9,2023-07-01,Fond
+709,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,73.1,2023-07-02,Fond
+710,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,69.4,2023-07-03,Fond
+711,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,55.2,2023-07-04,Fond
+712,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,61.9,2023-07-05,Fond
+713,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,59.4,2023-07-06,Fond
+714,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,86.8,2023-07-07,Fond
+715,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,100.3,2023-07-08,Fond
+716,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,82.6,2023-07-09,Fond
+717,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,75.9,2023-07-10,Fond
+718,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,64.3,2023-07-11,Fond
+719,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,60.0,2023-07-12,Fond
+720,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,63.0,2023-07-13,Fond
+721,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,83.2,2023-07-14,Fond
+722,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,92.4,2023-07-15,Fond
+723,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,71.0,2023-07-16,Fond
+724,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,80.0,2023-07-17,Fond
+725,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,61.3,2023-07-18,Fond
+726,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.8,2023-07-19,Fond
+727,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,85.2,2023-07-20,Fond
+728,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,72.7,2023-07-21,Fond
+729,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,77.8,2023-07-22,Fond
+730,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,73.9,2023-07-23,Fond
+731,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,75.9,2023-07-24,Fond
+732,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,76.4,2023-07-25,Fond
+733,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,71.7,2023-07-26,Fond
+734,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,62.2,2023-07-27,Fond
+735,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,73.4,2023-07-28,Fond
+736,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,65.0,2023-07-29,Fond
+737,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,66.1,2023-07-30,Fond
+738,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,81.4,2023-07-31,Fond
+739,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,73.8,2023-08-01,Fond
+740,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,70.3,2023-08-02,Fond
+741,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,79.9,2023-08-03,Fond
+742,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,70.1,2023-08-04,Fond
+743,TOULOUSE,Toulouse-SETMI Eisenhower Industriel,FR50039,Urbaine,NO2,14.6,2023-10-02,Industrielle
+744,MIRAMONT-DE-COMMINGES,Saint Gaudens-Miramont Industriel,FR50015,Urbaine,O3,34.4,2023-10-02,Industrielle
+745,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,O3,52.2,2023-10-02,Fond
+746,TOULOUSE,Toulouse-Périphérique Trafic,FR50048,Urbaine,NO,20.5,2023-10-02,Trafic
+747,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,FR50020,Rurale Nationale,NO,0.15,2023-10-02,Fond
+748,CASTRES,Castres-Travet Urbain,FR50053,Urbaine,NO,0.3,2023-10-02,Fond
+749,GAUDONVILLE,Gaudonville Rural,FR50029,Rurale Régionale,O3,89.2,2023-10-02,Fond
+750,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,O3,90.5,2023-10-02,Fond
+751,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,O3,68.0,2023-10-02,Fond
+752,TOULOUSE,Toulouse - Rte Albi Trafic,FR50054,Urbaine,NO,27.6,2023-10-02,Trafic
+753,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.4,2023-08-05,Fond
+754,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.1,2023-08-06,Fond
+755,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM10,13.7,2023-08-22,Fond
+756,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM10,13.4,2023-08-23,Fond
+757,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM10,15.2,2023-08-24,Fond
+758,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM10,9.2,2023-08-25,Fond
+759,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM10,5.0,2023-08-26,Fond
+760,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM10,2.4,2023-08-27,Fond
+761,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM10,2.6,2023-08-28,Fond
+762,SAINT-GIRONS,St-Girons Urbain,FR50826,Urbaine,PM10,6.7,2023-08-29,Fond
+763,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,NO2,4.6,2023-10-02,Fond
+764,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,53.7,2023-09-20,Fond
+765,MONTGISCARD,Montgiscard Périurbain,FR50041,Périurbaine,NO2,1.9,2023-10-02,Fond
+766,MONTAUBAN,Montauban - Ramierou Urbain,FR50060,Urbaine,NO2,18.2,2023-10-02,Fond
+767,AUCH,AUCH ST EXUPERY,FR50833,Urbaine,PM2.5,6.2,2023-10-18,Fond
+768,TOULOUSE,Toulouse - Port de l Embouchure Trafic,FR50821,Urbaine,NO,18.1,2023-10-18,Trafic
+769,RODEZ,Rodez - Camonil Urbain,FR50815,Urbaine,NO,0.8,2023-10-18,Fond
+770,NIMES,Nîmes Sud - Urbain,FR50211,Urbaine,PM10,7.5,2023-09-14,Fond
+771,NIMES,Nîmes Sud - Urbain,FR50211,Urbaine,PM10,38.0,2023-09-18,Fond
+772,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,56.3,2023-09-13,Fond
+773,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,59.4,2023-09-14,Fond
+774,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,63.1,2023-09-11,Fond
+775,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,69.7,2023-09-12,Fond
+776,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,70.2,2023-09-19,Fond
+777,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,NO,,2023-10-18,Fond
+778,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,PM10,19.3,2023-08-22,Fond
+779,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,PM10,18.7,2023-08-23,Fond
+780,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,PM10,21.7,2023-08-24,Fond
+781,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,PM10,5.4,2023-08-25,Fond
+782,ARGELES-GAZOST,Argeles-Gazost,FR50813,Urbaine,PM10,4.9,2023-08-26,Fond
+783,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,77.8,2023-08-07,Fond
+784,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,75.8,2023-08-08,Fond
+785,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,69.5,2023-08-09,Fond
+786,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.7,2023-08-10,Fond
+787,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,71.6,2023-08-11,Fond
+788,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,72.8,2023-08-12,Fond
+789,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,70.1,2023-08-13,Fond
+790,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,60.5,2023-08-14,Fond
+791,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,67.3,2023-08-15,Fond
+792,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,61.5,2023-08-16,Fond
+793,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,63.0,2023-08-17,Fond
+794,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.7,2023-08-18,Fond
+795,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,83.1,2023-08-19,Fond
+796,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,75.1,2023-08-20,Fond
+797,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,96.4,2023-08-21,Fond
+798,MONTPELLIER,Montpellier - Chaptal Urbain,FR50201,Urbaine,NO,0.2,2023-10-18,Fond
+799,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,57.9,2022-09-22,Fond
+800,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,53.3,2022-09-23,Fond
+801,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,71.4,2022-09-24,Fond
+802,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,50.1,2022-09-25,Fond
+803,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,50.2,2022-09-26,Fond
+804,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,58.2,2022-09-27,Fond
+805,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,58.0,2022-09-28,Fond
+806,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,55.1,2022-09-29,Fond
+807,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,36.9,2022-09-30,Fond
+808,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,30.4,2022-10-01,Fond
+809,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,35.1,2022-10-02,Fond
+810,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,50.6,2022-10-03,Fond
+811,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,43.7,2022-10-04,Fond
+812,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,NO2,4.6,2023-10-02,Fond
+813,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,78.4,2023-09-15,Fond
+814,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,94.1,2023-09-16,Fond
+815,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,83.1,2023-09-17,Fond
+816,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,77.9,2023-09-18,Fond
+817,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,PM2.5,3.5,2023-10-18,Fond
+818,AGDE,Agathois-Piscénois - Périurbain,FR50210,Périurbaine,PM2.5,19.7,2023-10-18,Fond
+819,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM2.5,15.8,2023-10-18,Trafic
+820,LOURDES,Lourdes-Lapaca Urbain,FR50042,Urbaine,NO2,8.0,2023-10-02,Fond
+821,LATTES,Montpellier Sud - Périurbain,FR50205,Périurbaine,O3,63.1,2023-09-21,Fond
+822,TARBES,Tarbes-Dupuy Urbain,FR50052,Urbaine,NO,6.5,2023-10-18,Fond
+823,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,PM2.5,,2023-10-18,Trafic
+824,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,39.4,2022-10-05,Fond
+825,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,38.2,2022-10-06,Fond
+826,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,36.9,2022-10-07,Fond
+827,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,41.0,2022-10-08,Fond
+828,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,34.5,2022-10-09,Fond
+829,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,38.9,2022-10-10,Fond
+830,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,30.3,2022-10-11,Fond
+831,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,26.1,2022-10-12,Fond
+832,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,23.9,2022-10-13,Fond
+833,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,26.6,2022-10-14,Fond
+834,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,27.3,2022-10-15,Fond
+835,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,59.1,2022-10-16,Fond
+836,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,32.2,2022-10-17,Fond
+837,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM10,46.2,2023-08-22,Fond
+838,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM10,41.7,2023-08-23,Fond
+839,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM10,30.5,2023-08-24,Fond
+840,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM10,27.4,2023-08-25,Fond
+841,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM10,21.6,2023-08-26,Fond
+842,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM10,5.8,2023-08-27,Fond
+843,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM10,5.2,2023-08-28,Fond
+844,MONTPELLIER,Montpellier - Prés d Arènes Urbain,FR50200,Urbaine,PM10,6.5,2023-08-29,Fond
+845,LUNEL-VIEL,Lunel-Viel - Industriel,FR50206,Périurbaine,NO2,6.3,2023-10-02,Industrielle
+846,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,26.9,2022-10-18,Fond
+847,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,15.8,2022-10-19,Fond
+848,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,53.0,2022-10-20,Fond
+849,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,59.0,2022-10-21,Fond
+850,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,41.9,2022-10-22,Fond
+851,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,66.8,2022-10-23,Fond
+852,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,52.6,2022-10-24,Fond
+853,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,33.4,2022-10-25,Fond
+854,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,43.0,2022-10-26,Fond
+855,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,32.2,2022-10-27,Fond
+856,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,23.2,2022-10-28,Fond
+857,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,22.5,2022-10-29,Fond
+858,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,25.1,2022-10-30,Fond
+859,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,49.0,2022-10-31,Fond
+860,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,41.8,2022-11-01,Fond
+861,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,21.5,2022-11-02,Fond
+862,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,22.4,2022-11-03,Fond
+863,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,49.8,2022-11-04,Fond
+864,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,56.1,2022-11-05,Fond
+865,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,29.5,2022-11-06,Fond
+866,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,20.3,2022-11-07,Fond
+867,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,31.5,2022-11-08,Fond
+868,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,56.3,2022-11-09,Fond
+869,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,38.1,2022-11-10,Fond
+870,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,20.7,2022-11-11,Fond
+871,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,14.3,2022-11-12,Fond
+872,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,6.4,2022-11-13,Fond
+873,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,16.2,2022-11-14,Fond
+874,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,25.5,2022-11-15,Fond
+875,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,33.9,2022-11-16,Fond
+876,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,23.5,2022-11-17,Fond
+877,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,41.1,2022-11-18,Fond
+878,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,53.5,2022-11-19,Fond
+879,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,55.8,2022-11-20,Fond
+880,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,24.7,2022-11-21,Fond
+881,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,34.7,2023-08-22,Trafic
+882,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,34.5,2023-08-23,Trafic
+883,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,26.1,2023-08-24,Trafic
+884,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,23.1,2023-08-25,Trafic
+885,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,17.8,2023-08-26,Trafic
+886,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,5.4,2023-08-27,Trafic
+887,BESSIERES,Bessières-ECONOTRE Industriel,FR50047,Rurale proche Zone Urbaine,PM10,16.1,2023-10-02,Industrielle
+888,BESSIERES,Bessières-ECONOTRE Industriel,FR50047,Rurale proche Zone Urbaine,PM10,18.3,2023-10-03,Industrielle
+889,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,PM10,17.3,2023-10-02,Fond
+890,TOULOUSE,Toulouse-Jacquier Urbain,FR50004,Urbaine,PM10,17.1,2023-10-03,Fond
+891,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,4.8,2023-08-28,Trafic
+892,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,6.0,2023-08-29,Trafic
+893,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM10,26.3,2023-08-22,Fond
+894,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM10,25.9,2023-08-23,Fond
+895,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM10,23.5,2023-08-24,Fond
+896,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM10,16.6,2023-08-25,Fond
+897,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM10,15.2,2023-08-26,Fond
+898,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM10,4.1,2023-08-27,Fond
+899,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM10,4.4,2023-08-28,Fond
+900,PERPIGNAN,Perpignan Centre - Urbain,FR50220,Urbaine,PM10,8.4,2023-08-29,Fond
+901,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,61.2,2022-11-22,Fond
+902,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,19.4,2022-11-23,Fond
+903,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,18.9,2022-11-24,Fond
+904,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,28.6,2022-11-25,Fond
+905,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,52.4,2022-11-26,Fond
+906,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,16.4,2022-11-27,Fond
+907,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,37.9,2022-11-28,Fond
+908,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,27.3,2022-11-29,Fond
+909,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,31.1,2022-11-30,Fond
+910,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,31.4,2022-12-01,Fond
+911,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,18.5,2022-12-02,Fond
+912,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,16.1,2022-12-03,Fond
+913,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,21.5,2022-12-04,Fond
+914,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,11.3,2022-12-05,Fond
+915,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,19.3,2022-12-06,Fond
+916,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,27.0,2022-12-07,Fond
+917,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,18.9,2022-12-08,Fond
+918,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,26.2,2022-12-09,Fond
+919,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,33.6,2022-12-10,Fond
+920,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,43.0,2022-12-11,Fond
+921,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,16.9,2022-12-12,Fond
+922,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,27.6,2022-12-13,Fond
+923,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,,2022-12-14,Fond
+924,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,21.8,2022-12-15,Fond
+925,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,20.6,2022-12-16,Fond
+926,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,35.4,2022-12-17,Fond
+927,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,9.4,2022-12-18,Fond
+928,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,40.1,2022-12-19,Fond
+929,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,59.4,2022-12-20,Fond
+930,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,26.9,2022-12-21,Fond
+931,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,14.8,2022-12-22,Fond
+932,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,29.5,2022-12-23,Fond
+933,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,11.0,2022-12-24,Fond
+934,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,4.9,2022-12-25,Fond
+935,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,17.1,2022-12-26,Fond
+936,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,19.6,2022-12-27,Fond
+937,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,9.3,2022-12-28,Fond
+938,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,34.9,2023-08-22,Trafic
+939,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,33.0,2023-08-23,Trafic
+940,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,26.9,2023-08-24,Trafic
+941,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,22.1,2023-08-25,Trafic
+942,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,18.0,2023-08-26,Trafic
+943,MONTPELLIER,Montpellier - Pompignane Trafic,FR50203,Urbaine,PM10,14.0,2023-09-01,Trafic
+944,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,4.9,2023-08-27,Trafic
+945,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,5.6,2023-08-28,Trafic
+946,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,8.5,2023-08-29,Trafic
+947,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,PM10,41.3,2023-08-22,Trafic
+948,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,PM10,42.8,2023-08-23,Trafic
+949,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,PM10,29.9,2023-08-24,Trafic
+950,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,PM10,26.0,2023-08-25,Trafic
+951,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,PM10,22.2,2023-08-26,Trafic
+952,MONTPELLIER,Montpellier Liberte Trafic,FR50225,Urbaine,PM10,6.5,2023-08-27,Trafic
+953,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,17.1,2022-12-29,Fond
+954,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,10.6,2022-12-30,Fond
+955,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,18.0,2022-12-31,Fond
+956,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,44.0,2023-01-01,Fond
+957,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,34.6,2023-01-02,Fond
+958,LA CALMETTE,La Calmette - Périurbain,FR50213,Périurbaine,O3,28.4,2023-01-03,Fond
+959,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,70.0,2022-09-23,Fond
+960,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,84.2,2022-09-24,Fond
+961,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,73.3,2022-09-25,Fond
+962,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,69.3,2022-09-26,Fond
+963,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,70.1,2022-09-27,Fond
+964,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,66.0,2022-09-28,Fond
+965,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,61.7,2022-09-29,Fond
+966,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,52.2,2022-09-30,Fond
+967,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,60.4,2022-10-01,Fond
+968,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,49.6,2022-10-02,Fond
+969,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,52.0,2022-10-03,Fond
+970,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,50.8,2022-10-04,Fond
+971,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,55.5,2022-10-05,Fond
+972,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,43.0,2022-10-06,Fond
+973,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,56.4,2022-10-07,Fond
+974,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,50.8,2022-10-08,Fond
+975,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,45.9,2022-10-09,Fond
+976,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,50.2,2022-10-10,Fond
+977,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,47.2,2022-10-11,Fond
+978,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,38.4,2022-10-12,Fond
+979,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,,2022-10-13,Fond
+980,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,47.4,2022-10-14,Fond
+981,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,42.3,2022-10-15,Fond
+982,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,66.2,2022-10-16,Fond
+983,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,65.3,2022-10-17,Fond
+984,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,46.4,2022-10-18,Fond
+985,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,30.6,2022-10-19,Fond
+986,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,63.2,2022-10-20,Fond
+987,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,58.6,2022-10-21,Fond
+988,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,41.5,2022-10-22,Fond
+989,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,77.4,2022-10-23,Fond
+990,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,54.0,2022-10-24,Fond
+991,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,46.0,2022-10-25,Fond
+992,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,62.0,2022-10-26,Fond
+993,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,49.9,2022-10-27,Fond
+994,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,43.9,2022-10-28,Fond
+995,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,44.1,2022-10-29,Fond
+996,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,53.2,2022-10-30,Fond
+997,SAINT-GELY-DU-FESC,Montpellier Nord - Périurbain,FR50204,Périurbaine,O3,65.7,2022-10-31,Fond
+998,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,8.6,2023-08-30,Trafic
+999,BEZIERS,Beziers Leclerc trafic,FR50226,Urbaine,PM10,9.4,2023-08-31,Trafic
