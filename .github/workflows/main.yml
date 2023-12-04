@@ -29,6 +29,9 @@ jobs:
       - name: Install shinylive
         run: pip install shinylive
 
+      - name: add-ext
+        run: quarto add quarto-ext/shinylive
+
       - name: Build Quarto site
         run: quarto render
 
