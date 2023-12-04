@@ -31,7 +31,8 @@ jobs:
 
       - name: add-ext
         run: quarto add quarto-ext/shinylive
-
+             y
+             y
       - name: Build Quarto site
         run: quarto render
 
