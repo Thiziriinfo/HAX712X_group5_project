@@ -30,9 +30,10 @@ jobs:
         run: pip install shinylive
 
       - name: add-ext
-        run: quarto add quarto-ext/shinylive
-             y
-             y
+        run: |
+            quarto add quarto-ext/shinylive
+            y
+            y
       - name: Build Quarto site
         run: quarto render
 
