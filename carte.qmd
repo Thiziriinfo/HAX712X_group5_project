@@ -7,7 +7,7 @@ from io import StringIO  # Importez StringIO depuis io
 
 # Charger les données depuis le CSV
 data = """nom_dept,nom_com,nom_station,x_wgs84,y_wgs84
-Ariege,Saint-Girons,St-Girons Urbain,1.13943,42.99
+ARIEGE,SAINT-GIRONS,St-Girons Urbain,1.13943,42.99
 AVEYRON,RODEZ,Rodez - Camonil Urbain,2.5707,44.357
 GARD,ALES,Ales Vauban fond,4.07548,44.1259
 GARD,LA CALMETTE,La Calmette - Périurbain,4.26581,43.9254
@@ -89,8 +89,4 @@ m.save("carte_interactive_occitanie_coloree.html")
 
 ```
 
-```{python}
-import pandas as pd
-data_vp=pd.read_csv("data_vp.csv")
-data_vp["nom_com"]
-```
+`
