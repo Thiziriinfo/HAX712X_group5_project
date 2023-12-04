@@ -1,22 +1,53 @@
 ```{python}
-import folium
-from ipywidgets import interact
+import pandas as pd
+import numpy as np
+from datetime import datetime
+import matplotlib.pyplot as plt
+import matplotlib.gridspec as gridspec
+import requests
 
-# Coordonnées des principales villes de l'Occitanie
-# Coordonnées approximatives pour englober la région Occitanie
-coordonnees_occitanie = [43.5, 2.0]  # Centre de la région
+#supprimer les warnings
+pd.options.mode.chained_assignment = None  # default='warn'
 
-# Fonction qui crée la carte avec la région Occitanie centrée
-def create_map_occitanie():
-    ma_carte_occitanie = folium.Map(location=coordonnees_occitanie, zoom_start=8)
-    
-    # Ajoutez des marqueurs ou des éléments supplémentaires si nécessaire
-    
-    # Enregistrez la carte dans un fichier HTML
-    ma_carte_occitanie.save('ma_carte_interactive_occitanie.html')
+#%%
+url = "https://services9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/rest/services/mesures_occitanie_mensuelle_poll_princ/FeatureServer/0/query?where=1%3D1&outFields=nom_com,nom_poll,valeur,date_debut,date_fin&outSR=4326&f=json"
 
-# Créez la carte de la région Occitanie
-create_map_occitanie()
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = response.json()
+else:
+    print(f"La requête a échoué avec le code d'état {response.status_code}")
 
 
+#%%
+records = data.get('features', [])
+records_data = [record['attributes'] for record in records]
+df_atmo = pd.DataFrame(records_data)
 
+# %%
+df_atmo["date_debut"] = df_atmo["date_debut"]/1000
+df_atmo["date_debut"] = df_atmo["date_debut"].apply(
+            lambda _: datetime.utcfromtimestamp(_)
+        )
+# nettoyage df
+#df = df.drop(["date_fin", "statut_valid", "x_l93", "y_l93", "geom", "metrique"], axis=1)
+
+# %%
+# liste des villes et des polluants
+villes = df_atmo["nom_com"].unique().tolist()
+villes.sort()
+polluants = df_atmo["nom_poll"].unique().tolist()
+polluants.sort()
+df_atmo["nom_com"]=df_atmo["nom_com"].str.title()
+d= dict(tuple(df_atmo.groupby('nom_poll')))
+data03 = d['O3']
+dataPM10 = d['PM10']
+dataNOX = d['NOX']
+dataPM25 = d['PM2.5']
+dataNO = d['NO']
+dataH2S = d['H2S']
+dataSO2 = d['SO2']
+dataNO2= d['NO2']
+data03
+```
