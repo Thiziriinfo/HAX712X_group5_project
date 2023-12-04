@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import requests
 import geopandas as gpd
-import pandas as pd
 import folium
 from folium.features import GeoJson
 from folium import Choropleth
@@ -124,6 +123,19 @@ for feature in geojson['features']:
 
  # Affichez la carte
 mymap.save('m.html')
+
+gdf_geojson = gpd.read_file("https://france-geojson.gregoiredavid.fr/repo/regions/occitanie/communes-occitanie.geojson")
+
+# Effectuer une jointure entre le GeoDataFrame et le DataFrame
+gdf_merged = gdf_geojson.merge(df, how='inner', left_on='nom', right_on='nom_com')
+# Ajouter un marqueur pour chaque station météorologique
+for index, row in gdf_merged.iterrows():
+    centroid_coords = row['geometry'].centroid.coords[0]
+    folium.Marker(
+        location=[centroid_coords[1], centroid_coords[0]],
+        popup=f"{row['nom_com']} {row['nom_poll']} {row['valeur']}"
+    ).add_to(mymap)
+
 
 ```
 
