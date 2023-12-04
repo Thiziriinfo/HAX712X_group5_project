@@ -1,4 +1,4 @@
-```{python}
+
 import folium
 import json
 import random
@@ -7,7 +7,7 @@ from io import StringIO  # Importez StringIO depuis io
 
 # Charger les données depuis le CSV
 data = """nom_dept,nom_com,nom_station,x_wgs84,y_wgs84
-Ariege,Saint-Girons,St-Girons Urbain,1.13943,42.99
+ARIEGE,SAINT-GIRONS,St-Girons Urbain,1.13943,42.99
 AVEYRON,RODEZ,Rodez - Camonil Urbain,2.5707,44.357
 GARD,ALES,Ales Vauban fond,4.07548,44.1259
 GARD,LA CALMETTE,La Calmette - Périurbain,4.26581,43.9254
@@ -59,38 +59,13 @@ with open(geojson_path) as f:
 
 # Créer une carte centrée sur la région Occitanie
 m = folium.Map(location=[43.6, 1.44], zoom_start=8)
+m.geo_json(geo_path= geojson_data, data=df,
+             columns=['nom_com', 'nom_station'], #colonnes de la table csv
+             key_on='features', # lien avec le fichier GeoJSON 
+             fill_color='YlGn', fill_opacity=0.9, line_opacity=0.4, # couleur pour chaque élément du fichier GeoJSON
+             legend_name='nom_com')
 
-# Fonction de style pour assigner une couleur aléatoire à chaque département
-def style_function(feature):
-    # Générez une couleur aléatoire au format hexadécimal
-    color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
-    
-    return {
-        'fillColor': color,
-        'color': 'black',
-        'weight': 1,
-        'fillOpacity': 0.7
-    }
 
-# Ajouter le GeoJSON à la carte avec la fonction de style
-folium.GeoJson(
-    geojson_data,
-    style_function=style_function,
-).add_to(m)
 
-# Ajouter un marqueur pour chaque station météorologique
-for index, row in df.iterrows():
-    folium.Marker(
-        location=[row['y_wgs84'], row['x_wgs84']],
-        popup=f"{row['nom_station']} - {row['nom_com']}, {row['nom_dept']}"
-    ).add_to(m)
 # Enregistrez la carte au format HTML
 m.save("carte_interactive_occitanie_coloree.html")
-
-```
-
-```{python}
-import pandas as pd
-data_vp=pd.read_csv("data_vp.csv")
-data_vp["nom_com"]
-```

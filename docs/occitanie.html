@@ -134,13 +134,92 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<<<<<<< HEAD
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#charger-les-données-depuis-le-csv" id="toc-charger-les-données-depuis-le-csv" class="nav-link active" data-scroll-target="#charger-les-données-depuis-le-csv">Charger les données depuis le CSV</a></li>
+  <li><a href="#charger-les-données-dans-un-dataframe-pandas" id="toc-charger-les-données-dans-un-dataframe-pandas" class="nav-link" data-scroll-target="#charger-les-données-dans-un-dataframe-pandas">Charger les données dans un DataFrame pandas</a></li>
+  <li><a href="#charger-le-fichier-geojson" id="toc-charger-le-fichier-geojson" class="nav-link" data-scroll-target="#charger-le-fichier-geojson">Charger le fichier GeoJSON</a></li>
+  <li><a href="#créer-une-carte-centrée-sur-la-région-occitanie" id="toc-créer-une-carte-centrée-sur-la-région-occitanie" class="nav-link" data-scroll-target="#créer-une-carte-centrée-sur-la-région-occitanie">Créer une carte centrée sur la région Occitanie</a></li>
+  <li><a href="#fonction-de-style-pour-assigner-une-couleur-aléatoire-à-chaque-département" id="toc-fonction-de-style-pour-assigner-une-couleur-aléatoire-à-chaque-département" class="nav-link" data-scroll-target="#fonction-de-style-pour-assigner-une-couleur-aléatoire-à-chaque-département">Fonction de style pour assigner une couleur aléatoire à chaque département</a></li>
+  <li><a href="#ajouter-le-geojson-à-la-carte-avec-la-fonction-de-style" id="toc-ajouter-le-geojson-à-la-carte-avec-la-fonction-de-style" class="nav-link" data-scroll-target="#ajouter-le-geojson-à-la-carte-avec-la-fonction-de-style">Ajouter le GeoJSON à la carte avec la fonction de style</a></li>
+  <li><a href="#ajouter-un-marqueur-pour-chaque-station-météorologique" id="toc-ajouter-un-marqueur-pour-chaque-station-météorologique" class="nav-link" data-scroll-target="#ajouter-un-marqueur-pour-chaque-station-météorologique">Ajouter un marqueur pour chaque station météorologique</a></li>
+  <li><a href="#nouvelle-partie-pour-les-données-de-pollution" id="toc-nouvelle-partie-pour-les-données-de-pollution" class="nav-link" data-scroll-target="#nouvelle-partie-pour-les-données-de-pollution">Nouvelle partie pour les données de pollution</a></li>
+  <li><a href="#extraire-les-données-et-les-mettre-dans-un-dataframe" id="toc-extraire-les-données-et-les-mettre-dans-un-dataframe" class="nav-link" data-scroll-target="#extraire-les-données-et-les-mettre-dans-un-dataframe">Extraire les données et les mettre dans un DataFrame</a></li>
+  <li><a href="#convertir-la-colonne-date_debut-en-format-datetime" id="toc-convertir-la-colonne-date_debut-en-format-datetime" class="nav-link" data-scroll-target="#convertir-la-colonne-date_debut-en-format-datetime">Convertir la colonne date_debut en format datetime</a></li>
+  <li><a href="#ajouter-un-marqueur-pour-chaque-ville-et-polluant" id="toc-ajouter-un-marqueur-pour-chaque-ville-et-polluant" class="nav-link" data-scroll-target="#ajouter-un-marqueur-pour-chaque-ville-et-polluant">Ajouter un marqueur pour chaque ville et polluant</a></li>
+  <li><a href="#enregistrez-la-carte-au-format-html" id="toc-enregistrez-la-carte-au-format-html" class="nav-link" data-scroll-target="#enregistrez-la-carte-au-format-html">Enregistrez la carte au format HTML</a></li>
+  </ul>
+</nav>
+=======
         
+>>>>>>> b091fbf68a4cc7c624add3d62f18080aabd9d1ff
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 
+<<<<<<< HEAD
+<p>import folium import json import random import pandas as pd from io import StringIO from datetime import datetime import requests</p>
+<section id="charger-les-données-depuis-le-csv" class="level1">
+<h1>Charger les données depuis le CSV</h1>
+<p>data = “““nom_dept,nom_com,nom_station,x_wgs84,y_wgs84 ARIEGE,SAINT-GIRONS,St-Girons Urbain,1.13943,42.99 AVEYRON,RODEZ,Rodez - Camonil Urbain,2.5707,44.357 GARD,ALES,Ales Vauban fond,4.07548,44.1259 GARD,LA CALMETTE,La Calmette - Périurbain,4.26581,43.9254 GARD,NIMES,Nîmes - Planas - Trafic,4.36199,43.8299 GARD,NIMES,Nîmes Sud - Urbain,4.37422,43.8344 GARD,SAZE,Saze - rural,4.67969,43.9429 GERS,AUCH,AUCH ST EXUPERY,0.59467,43.6511 GERS,GAUDONVILLE,Gaudonville Rural,0.845617,43.884 GERS,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,0.179722,43.6303 HAUTE-GARONNE,BELESTA-EN-LAURAGAIS,Belesta en Lauragais Rural,1.82194,43.4414 HAUTE-GARONNE,BESSIERES,Bessières-ECONOTRE Industriel,1.59583,43.8039 HAUTE-GARONNE,BLAGNAC,Blagnac Aéroport Piste ,1.37725,43.6253 HAUTE-GARONNE,BLAGNAC,Blagnac Aéroport Trafic ,1.37572,43.6335 HAUTE-GARONNE,MIRAMONT-DE-COMMINGES,Saint Gaudens-Miramont Industriel,0.744722,43.0944 HAUTE-GARONNE,MONTGISCARD,Montgiscard Périurbain,1.57111,43.4575 HAUTE-GARONNE,SAINT-GAUDENS,Saint Gaudens-Daurat Industriel,0.718889,43.1064 HAUTE-GARONNE,TOULOUSE,Station Pedagogique,1.38541,43.597 HAUTE-GARONNE,TOULOUSE,Toulouse - Port de l Embouchure Trafic,1.41518,43.6103 HAUTE-GARONNE,TOULOUSE,Toulouse - Rte Albi Trafic,1.46765,43.6431 HAUTE-GARONNE,TOULOUSE,Toulouse-Berthelot Urbain,1.44403,43.5873 HAUTE-GARONNE,TOULOUSE,Toulouse-Jacquier Urbain,1.41807,43.5757 HAUTE-GARONNE,TOULOUSE,Toulouse-Mazades Urbain,1.43861,43.6236 HAUTE-GARONNE,TOULOUSE,Toulouse-Périphérique Trafic,1.44959,43.574 HAUTE-GARONNE,TOULOUSE,Toulouse-SETMI Chapitre Industriel,1.40392,43.5564 HAUTE-GARONNE,TOULOUSE,Toulouse-SETMI Eisenhower Industriel,1.39326,43.5616 HAUTES-PYRENEES,ARGELES-GAZOST,Argeles-Gazost,-0.0950538,43.0075 HAUTES-PYRENEES,LOURDES,Lourdes-Lapaca Urbain,-0.038889,43.0969 HAUTES-PYRENEES,TARBES,Tarbes-Dupuy Urbain,0.062222,43.2303 HERAULT,AGDE,Agathois-Piscénois - Périurbain,3.50483,43.2878 HERAULT,BEZIERS,Beziers Leclerc trafic,3.23734,43.3412 HERAULT,CORNEILHAN,Biterrois-Narbonnais - Rural,3.18881,43.4068 HERAULT,LATTES,Montpellier Sud - Périurbain,3.91156,43.5706 HERAULT,LUNEL-VIEL,Lunel-Viel - Industriel,4.08842,43.6758 HERAULT,MONTPELLIER,Montpelier Antigone Trafic,3.89574,43.6088 HERAULT,MONTPELLIER,Montpellier - Chaptal Urbain,3.86472,43.6117 HERAULT,MONTPELLIER,Montpellier - Pompignane Trafic,3.89861,43.61 HERAULT,MONTPELLIER,Montpellier - Prés d Arènes Urbain,3.88689,43.5915 HERAULT,MONTPELLIER,Montpellier - Saint Denis Trafic,3.8746,43.605”“”</p>
+</section>
+<section id="charger-les-données-dans-un-dataframe-pandas" class="level1">
+<h1>Charger les données dans un DataFrame pandas</h1>
+<p>df = pd.read_csv(StringIO(data))</p>
+</section>
+<section id="charger-le-fichier-geojson" class="level1">
+<h1>Charger le fichier GeoJSON</h1>
+<p>geojson_path = “departements-occitanie.geojson” with open(geojson_path) as f: geojson_data = json.load(f)</p>
+</section>
+<section id="créer-une-carte-centrée-sur-la-région-occitanie" class="level1">
+<h1>Créer une carte centrée sur la région Occitanie</h1>
+<p>m = folium.Map(location=[43.6, 1.44], zoom_start=8)</p>
+</section>
+<section id="fonction-de-style-pour-assigner-une-couleur-aléatoire-à-chaque-département" class="level1">
+<h1>Fonction de style pour assigner une couleur aléatoire à chaque département</h1>
+<p>def style_function(feature): # Générez une couleur aléatoire au format hexadécimal color = “#{:06x}”.format(random.randint(0, 0xFFFFFF))</p>
+<pre><code>return {
+    'fillColor': color,
+    'color': 'black',
+    'weight': 1,
+    'fillOpacity': 0.7
+}</code></pre>
+</section>
+<section id="ajouter-le-geojson-à-la-carte-avec-la-fonction-de-style" class="level1">
+<h1>Ajouter le GeoJSON à la carte avec la fonction de style</h1>
+<p>folium.GeoJson( geojson_data, style_function=style_function, ).add_to(m)</p>
+</section>
+<section id="ajouter-un-marqueur-pour-chaque-station-météorologique" class="level1">
+<h1>Ajouter un marqueur pour chaque station météorologique</h1>
+<p>for index, row in df.iterrows(): folium.Marker( location=[row[‘y_wgs84’], row[‘x_wgs84’]], popup=f”{row[‘nom_station’]} - {row[‘nom_com’]}, {row[‘nom_dept’]}” ).add_to(m)</p>
+</section>
+<section id="nouvelle-partie-pour-les-données-de-pollution" class="level1">
+<h1>Nouvelle partie pour les données de pollution</h1>
+<p>url = “https://services9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/rest/services/mesures_occitanie_journaliere_poll_princ/FeatureServer/0/query?where=1%3D1&amp;outFields=nom_com,nom_station,code_station,typologie,nom_poll,valeur,date_debut,influence&amp;outSR=4326&amp;f=json”</p>
+<p>response = requests.get(url)</p>
+<p>if response.status_code == 200: data_atmo = response.json() else: print(f”La requête a échoué avec le code d’état {response.status_code}“)</p>
+</section>
+<section id="extraire-les-données-et-les-mettre-dans-un-dataframe" class="level1">
+<h1>Extraire les données et les mettre dans un DataFrame</h1>
+<p>records_atmo = data_atmo.get(‘features’, []) records_atmo_data = [record[‘attributes’] for record in records_atmo] df_atmo = pd.DataFrame(records_atmo_data)</p>
+</section>
+<section id="convertir-la-colonne-date_debut-en-format-datetime" class="level1">
+<h1>Convertir la colonne date_debut en format datetime</h1>
+<p>df_atmo[“date_debut”] = df_atmo[“date_debut”] / 1000 df_atmo[“date_debut”] = df_atmo[“date_debut”].apply(lambda <em>: datetime.utcfromtimestamp(</em>))</p>
+</section>
+<section id="ajouter-un-marqueur-pour-chaque-ville-et-polluant" class="level1">
+<h1>Ajouter un marqueur pour chaque ville et polluant</h1>
+<p>for index, row in df_atmo.iterrows(): folium.Marker( location=[row[‘latitude’], row[‘longitude’]], # Assurez-vous que vous avez les colonnes latitude et longitude dans df_atmo popup=f”{row[‘nom_com’]} - {row[‘nom_poll’]} - {row[‘valeur’]} ({row[‘date_debut’]})“, icon=folium.Icon(color=‘red’) # Vous pouvez personnaliser l’icône en fonction du polluant ).add_to(m)</p>
+</section>
+<section id="enregistrez-la-carte-au-format-html" class="level1">
+<h1>Enregistrez la carte au format HTML</h1>
+<p>m.save(“carte_interactive_occitanie_coloree.html”)</p>
+=======
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
@@ -333,6 +412,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+>>>>>>> b091fbf68a4cc7c624add3d62f18080aabd9d1ff
 
 
 
