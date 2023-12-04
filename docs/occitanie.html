@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -59,6 +93,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -83,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./map.html" rel="" target="">
- <span class="menu-text">Home</span></a>
+ <span class="menu-text">map</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -97,6 +134,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<<<<<<< HEAD
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
@@ -115,12 +153,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#enregistrez-la-carte-au-format-html" id="toc-enregistrez-la-carte-au-format-html" class="nav-link" data-scroll-target="#enregistrez-la-carte-au-format-html">Enregistrez la carte au format HTML</a></li>
   </ul>
 </nav>
+=======
+        
+>>>>>>> b091fbf68a4cc7c624add3d62f18080aabd9d1ff
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 
+<<<<<<< HEAD
 <p>import folium import json import random import pandas as pd from io import StringIO from datetime import datetime import requests</p>
 <section id="charger-les-données-depuis-le-csv" class="level1">
 <h1>Charger les données depuis le CSV</h1>
@@ -177,9 +219,202 @@ ul.task-list li input[type="checkbox"] {
 <section id="enregistrez-la-carte-au-format-html" class="level1">
 <h1>Enregistrez la carte au format HTML</h1>
 <p>m.save(“carte_interactive_occitanie_coloree.html”)</p>
+=======
+<div class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> datetime <span class="im">import</span> datetime</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.gridspec <span class="im">as</span> gridspec</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">#supprimer les warnings</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>pd.options.mode.chained_assignment <span class="op">=</span> <span class="va">None</span>  <span class="co"># default='warn'</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">#%%</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">"https://services9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/rest/services/mesures_occitanie_journaliere_poll_princ/FeatureServer/0/query?where=1%3D1&amp;outFields=nom_com,nom_station,code_station,typologie,nom_poll,valeur,date_debut,influence&amp;outSR=4326&amp;f=json"</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> requests.get(url)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> response.status_code <span class="op">==</span> <span class="dv">200</span>:</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> response.json()</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"La requête a échoué avec le code d'état </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">#%%</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>records <span class="op">=</span> data.get(<span class="st">'features'</span>, [])</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>records_data <span class="op">=</span> [record[<span class="st">'attributes'</span>] <span class="cf">for</span> record <span class="kw">in</span> records]</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>df_atmo <span class="op">=</span> pd.DataFrame(records_data)</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="co"># %%</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>df_atmo[<span class="st">"date_debut"</span>] <span class="op">=</span> df_atmo[<span class="st">"date_debut"</span>]<span class="op">/</span><span class="dv">1000</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>df_atmo[<span class="st">"date_debut"</span>] <span class="op">=</span> df_atmo[<span class="st">"date_debut"</span>].<span class="bu">apply</span>(</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>            <span class="kw">lambda</span> _: datetime.utcfromtimestamp(_)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="co"># nettoyage df</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="co">#df = df.drop(["date_fin", "statut_valid", "x_l93", "y_l93", "geom", "metrique"], axis=1)</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="co"># liste des villes et des polluants</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>villes <span class="op">=</span> df_atmo[<span class="st">"nom_com"</span>].unique().tolist()</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>villes.sort()</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>polluants <span class="op">=</span> df_atmo[<span class="st">"nom_poll"</span>].unique().tolist()</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>polluants.sort()</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>df_atmo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>C:\Users\hp\AppData\Local\Temp\ipykernel_11324\2691145479.py:30: DeprecationWarning: datetime.datetime.utcfromtimestamp() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.fromtimestamp(timestamp, datetime.UTC).
+  lambda _: datetime.utcfromtimestamp(_)</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="1">
+<div>
 
 
-</section>
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">nom_com</th>
+<th data-quarto-table-cell-role="th">nom_station</th>
+<th data-quarto-table-cell-role="th">code_station</th>
+<th data-quarto-table-cell-role="th">typologie</th>
+<th data-quarto-table-cell-role="th">nom_poll</th>
+<th data-quarto-table-cell-role="th">valeur</th>
+<th data-quarto-table-cell-role="th">date_debut</th>
+<th data-quarto-table-cell-role="th">influence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>MONTPELLIER</td>
+<td>Montpellier - Prés d Arènes Urbain</td>
+<td>FR50200</td>
+<td>Urbaine</td>
+<td>O3</td>
+<td>69.3</td>
+<td>2023-08-07</td>
+<td>Fond</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>MONTPELLIER</td>
+<td>Montpellier - Prés d Arènes Urbain</td>
+<td>FR50200</td>
+<td>Urbaine</td>
+<td>O3</td>
+<td>66.7</td>
+<td>2023-08-08</td>
+<td>Fond</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>MONTPELLIER</td>
+<td>Montpellier - Prés d Arènes Urbain</td>
+<td>FR50200</td>
+<td>Urbaine</td>
+<td>O3</td>
+<td>65.4</td>
+<td>2023-08-09</td>
+<td>Fond</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>MONTPELLIER</td>
+<td>Montpellier - Prés d Arènes Urbain</td>
+<td>FR50200</td>
+<td>Urbaine</td>
+<td>O3</td>
+<td>72.8</td>
+<td>2023-08-10</td>
+<td>Fond</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>MONTPELLIER</td>
+<td>Montpellier - Prés d Arènes Urbain</td>
+<td>FR50200</td>
+<td>Urbaine</td>
+<td>O3</td>
+<td>54.0</td>
+<td>2023-08-11</td>
+<td>Fond</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">995</td>
+<td>SAINT-GELY-DU-FESC</td>
+<td>Montpellier Nord - Périurbain</td>
+<td>FR50204</td>
+<td>Périurbaine</td>
+<td>O3</td>
+<td>44.1</td>
+<td>2022-10-29</td>
+<td>Fond</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">996</td>
+<td>SAINT-GELY-DU-FESC</td>
+<td>Montpellier Nord - Périurbain</td>
+<td>FR50204</td>
+<td>Périurbaine</td>
+<td>O3</td>
+<td>53.2</td>
+<td>2022-10-30</td>
+<td>Fond</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">997</td>
+<td>SAINT-GELY-DU-FESC</td>
+<td>Montpellier Nord - Périurbain</td>
+<td>FR50204</td>
+<td>Périurbaine</td>
+<td>O3</td>
+<td>65.7</td>
+<td>2022-10-31</td>
+<td>Fond</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">998</td>
+<td>BEZIERS</td>
+<td>Beziers Leclerc trafic</td>
+<td>FR50226</td>
+<td>Urbaine</td>
+<td>PM10</td>
+<td>8.6</td>
+<td>2023-08-30</td>
+<td>Trafic</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">999</td>
+<td>BEZIERS</td>
+<td>Beziers Leclerc trafic</td>
+<td>FR50226</td>
+<td>Urbaine</td>
+<td>PM10</td>
+<td>9.4</td>
+<td>2023-08-31</td>
+<td>Trafic</td>
+</tr>
+</tbody>
+</table>
+
+<p>1000 rows × 8 columns</p>
+</div>
+</div>
+</div>
+>>>>>>> b091fbf68a4cc7c624add3d62f18080aabd9d1ff
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

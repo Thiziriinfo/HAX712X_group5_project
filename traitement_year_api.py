@@ -37,13 +37,13 @@ class AirQualityData:
         villes.sort()
         polluants = df_atmo["nom_poll"].unique().tolist()
         polluants.sort()
-
+     
         print("Liste des villes : ")
         print(tabulate([[v] for v in villes], headers=["Villes"]))
 
         print("\nListe des polluants : ")
         print(tabulate([[p] for p in polluants], headers=["Polluants"]))
-
+      df_atmo
 # Example usage:
 url = "https://services9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/rest/services/mesures_occitanie_mensuelle_poll_princ/FeatureServer/0/query?where=1%3D1&outFields=nom_com,nom_station,code_station,typologie,nom_poll,valeur,date_debut,influence&outSR=4326&f=json"
 air_quality_data = AirQualityData(url)

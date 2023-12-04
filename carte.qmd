@@ -89,3 +89,8 @@ m.save("carte_interactive_occitanie_coloree.html")
 
 ```
 
+```{python}
+import pandas as pd
+data_vp=pd.read_csv("data_vp.csv")
+data_vp["nom_com"]
+```

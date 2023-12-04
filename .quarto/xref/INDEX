@@ -24,6 +24,10 @@
     "map.html": "417bbe03"
   },
   "carte.qmd": {
+<<<<<<< HEAD
     "carte.html": "b9bfa736"
+=======
+    "carte.html": "6a036ed0"
+>>>>>>> b091fbf68a4cc7c624add3d62f18080aabd9d1ff
   }
 }
