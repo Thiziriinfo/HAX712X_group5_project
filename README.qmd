@@ -146,6 +146,6 @@ Pour la documentation, nous utiliserons la librairie Sphynx et pour la réalisat
 
 - Abchiche Thiziri : thiziri.abchiche@etu.umontpellier.fr
 - Bernard-Reymond Guillaume : guillaume.bernard-reymond@etu.umontpellier.fr
-- Hamomi Majda : mhamomi1@gmail.com
+- Hamomi Majda : majda.hamomi@etu.umontpellier.fr
 - Gaggini Lorenzo : lorenzo.gaggini@etu.umontpellier.fr
 - Ollier Julien : julien.ollier@etu.umontpellier.fr
