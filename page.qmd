@@ -1,6 +1,8 @@
 ---
 title: "group5project"
-format: dashboard
+format: html
+filters:
+  - shinylive
 ---
 
 ```{shinylive-python}
