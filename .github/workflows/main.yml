@@ -28,15 +28,7 @@ jobs:
           pip install -r requirements.txt
       - name: Install shinylive
         run: pip install shinylive
-
-      - name: add-ext
-<<<<<<< HEAD
-        run: quarto add quarto-ext/shinylive
-
-=======
-        run: quarto add quarto-ext/shinylive && y && y
         
->>>>>>> 262f342ae9afb665b34abbc5d91ed068676f1e29
       - name: Build Quarto site
         run: quarto render
 
