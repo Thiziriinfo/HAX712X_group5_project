@@ -1,124 +1,4 @@
 ```{python}
-<<<<<<< HEAD
-import folium
-import json
-import random
-import pandas as pd
-from io import StringIO
-from datetime import datetime
-import requests
-
-
-# Charger les données depuis le CSV
-data = """nom_dept,nom_com,nom_station,x_wgs84,y_wgs84
-ARIEGE,SAINT-GIRONS,St-Girons Urbain,1.13943,42.99
-AVEYRON,RODEZ,Rodez - Camonil Urbain,2.5707,44.357
-GARD,ALES,Ales Vauban fond,4.07548,44.1259
-GARD,LA CALMETTE,La Calmette - Périurbain,4.26581,43.9254
-GARD,NIMES,Nîmes - Planas - Trafic,4.36199,43.8299
-GARD,NIMES,Nîmes Sud - Urbain,4.37422,43.8344
-GARD,SAZE,Saze - rural,4.67969,43.9429
-GERS,AUCH,AUCH ST EXUPERY,0.59467,43.6511
-GERS,GAUDONVILLE,Gaudonville Rural,0.845617,43.884
-GERS,PEYRUSSE-VIEILLE,Peyrusse Vieille Rural,0.179722,43.6303
-HAUTE-GARONNE,BELESTA-EN-LAURAGAIS,Belesta en Lauragais Rural,1.82194,43.4414
-HAUTE-GARONNE,BESSIERES,Bessières-ECONOTRE Industriel,1.59583,43.8039
-HAUTE-GARONNE,BLAGNAC,Blagnac Aéroport Piste ,1.37725,43.6253
-HAUTE-GARONNE,BLAGNAC,Blagnac Aéroport Trafic ,1.37572,43.6335
-HAUTE-GARONNE,MIRAMONT-DE-COMMINGES,Saint Gaudens-Miramont Industriel,0.744722,43.0944
-HAUTE-GARONNE,MONTGISCARD,Montgiscard Périurbain,1.57111,43.4575
-HAUTE-GARONNE,SAINT-GAUDENS,Saint Gaudens-Daurat Industriel,0.718889,43.1064
-HAUTE-GARONNE,TOULOUSE,Station Pedagogique,1.38541,43.597
-HAUTE-GARONNE,TOULOUSE,Toulouse - Port de l Embouchure Trafic,1.41518,43.6103
-HAUTE-GARONNE,TOULOUSE,Toulouse - Rte Albi Trafic,1.46765,43.6431
-HAUTE-GARONNE,TOULOUSE,Toulouse-Berthelot Urbain,1.44403,43.5873
-HAUTE-GARONNE,TOULOUSE,Toulouse-Jacquier Urbain,1.41807,43.5757
-HAUTE-GARONNE,TOULOUSE,Toulouse-Mazades Urbain,1.43861,43.6236
-HAUTE-GARONNE,TOULOUSE,Toulouse-Périphérique Trafic,1.44959,43.574
-HAUTE-GARONNE,TOULOUSE,Toulouse-SETMI Chapitre Industriel,1.40392,43.5564
-HAUTE-GARONNE,TOULOUSE,Toulouse-SETMI Eisenhower Industriel,1.39326,43.5616
-HAUTES-PYRENEES,ARGELES-GAZOST,Argeles-Gazost,-0.0950538,43.0075
-HAUTES-PYRENEES,LOURDES,Lourdes-Lapaca Urbain,-0.038889,43.0969
-HAUTES-PYRENEES,TARBES,Tarbes-Dupuy Urbain,0.062222,43.2303
-HERAULT,AGDE,Agathois-Piscénois - Périurbain,3.50483,43.2878
-HERAULT,BEZIERS,Beziers Leclerc trafic,3.23734,43.3412
-HERAULT,CORNEILHAN,Biterrois-Narbonnais - Rural,3.18881,43.4068
-HERAULT,LATTES,Montpellier Sud - Périurbain,3.91156,43.5706
-HERAULT,LUNEL-VIEL,Lunel-Viel - Industriel,4.08842,43.6758
-HERAULT,MONTPELLIER,Montpelier Antigone Trafic,3.89574,43.6088
-HERAULT,MONTPELLIER,Montpellier - Chaptal Urbain,3.86472,43.6117
-HERAULT,MONTPELLIER,Montpellier - Pompignane Trafic,3.89861,43.61
-HERAULT,MONTPELLIER,Montpellier - Prés d Arènes Urbain,3.88689,43.5915
-HERAULT,MONTPELLIER,Montpellier - Saint Denis Trafic,3.8746,43.605
-"""
-
-
-# Charger les données dans un DataFrame pandas
-df = pd.read_csv(StringIO(data))
-
-# Charger le fichier GeoJSON
-geojson_path = "departements-occitanie.geojson"
-with open(geojson_path) as f:
-    geojson_data = json.load(f)
-
-# Créer une carte centrée sur la région Occitanie
-m = folium.Map(location=[43.6, 1.44], zoom_start=8)
-
-# Fonction de style pour assigner une couleur aléatoire à chaque département
-def style_function(feature):
-    # Générez une couleur aléatoire au format hexadécimal
-    color = "#{:06x}".format(random.randint(0, 0xFFFFFF))
-    
-    return {
-        'fillColor': color,
-        'color': 'black',
-        'weight': 1,
-        'fillOpacity': 0.7
-    }
-
-# Ajouter le GeoJSON à la carte avec la fonction de style
-folium.GeoJson(
-    geojson_data,
-    style_function=style_function,
-).add_to(m)
-
-# Ajouter un marqueur pour chaque station météorologique
-for index, row in df.iterrows():
-    folium.Marker(
-        location=[row['y_wgs84'], row['x_wgs84']],
-        popup=f"{row['nom_station']} - {row['nom_com']}, {row['nom_dept']}"
-    ).add_to(m)
-
-# Nouvelle partie pour les données de pollution
-url = "https://services9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/rest/services/mesures_occitanie_journaliere_poll_princ/FeatureServer/0/query?where=1%3D1&outFields=nom_com,nom_station,code_station,typologie,nom_poll,valeur,date_debut,influence&outSR=4326&f=json"
-
-response = requests.get(url)
-
-if response.status_code == 200:
-    data_atmo = response.json()
-else:
-    print(f"La requête a échoué avec le code d'état {response.status_code}")
-
-# Extraire les données et les mettre dans un DataFrame
-records_atmo = data_atmo.get('features', [])
-records_atmo_data = [record['attributes'] for record in records_atmo]
-df_atmo = pd.DataFrame(records_atmo_data)
-
-# Convertir la colonne date_debut en format datetime
-df_atmo["date_debut"] = df_atmo["date_debut"] / 1000
-df_atmo["date_debut"] = df_atmo["date_debut"].apply(lambda _: datetime.utcfromtimestamp(_))
-
-# Ajouter un marqueur pour chaque ville et polluant
-for index, row in df_atmo.iterrows():
-    folium.Marker(
-        location=[row['latitude'], row['longitude']],  # Assurez-vous que vous avez les colonnes latitude et longitude dans df_atmo
-        popup=f"{row['nom_com']} - {row['nom_poll']} - {row['valeur']} ({row['date_debut']})",
-        icon=folium.Icon(color='red')  # Vous pouvez personnaliser l'icône en fonction du polluant
-    ).add_to(m)
-
-# Enregistrez la carte au format HTML
-m.save("carte_interactive_occitanie_coloree.html")
-=======
 import pandas as pd
 import numpy as np
 from datetime import datetime
@@ -129,7 +9,7 @@ import requests
 #supprimer les warnings
 pd.options.mode.chained_assignment = None  # default='warn'
 
-#%%
+
 url = "https://services9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/rest/services/mesures_occitanie_mensuelle_poll_princ/FeatureServer/0/query?where=1%3D1&outFields=nom_com,nom_poll,valeur,date_debut,date_fin&outSR=4326&f=json"
 
 response = requests.get(url)
@@ -138,7 +18,6 @@ if response.status_code == 200:
     data = response.json()
 else:
     print(f"La requête a échoué avec le code d'état {response.status_code}")
->>>>>>> b091fbf68a4cc7c624add3d62f18080aabd9d1ff
 
 
 #%%
@@ -162,13 +41,24 @@ polluants = df_atmo["nom_poll"].unique().tolist()
 polluants.sort()
 df_atmo["nom_com"]=df_atmo["nom_com"].str.title()
 d= dict(tuple(df_atmo.groupby('nom_poll')))
-data03 = d['O3']
-dataPM10 = d['PM10']
-dataNOX = d['NOX']
-dataPM25 = d['PM2.5']
-dataNO = d['NO']
-dataH2S = d['H2S']
-dataSO2 = d['SO2']
-dataNO2= d['NO2']
-data03
+dataO3_1 = d['O3']
+dataPM10_2 = d['PM10']
+dataNOX_3 = d['NOX']
+dataPM25_4 = d['PM2.5']
+dataNO_5 = d['NO']
+dataH2S_6 = d['H2S']
+dataSO2_7 = d['SO2']
+dataNO2_8= d['NO2']
+
+
+# Créer un nouveau DataFrame avec les résultats
+dataO3 = dataO3_1.groupby(['nom_com', 'nom_poll']).max().reset_index()
+dataPM10 =dataPM10_2.groupby(['nom_com', 'nom_poll']).max().reset_index()
+dataNOX = dataNOX_3.groupby(['nom_com', 'nom_poll']).max().reset_index()
+dataPM25 = dataPM25_4.groupby(['nom_com', 'nom_poll']).max().reset_index()
+dataNO = dataNO_5.groupby(['nom_com', 'nom_poll']).max().reset_index()
+dataH2S = dataH2S_6.groupby(['nom_com', 'nom_poll']).max().reset_index()
+dataSO2 = dataSO2_7.groupby(['nom_com', 'nom_poll']).max().reset_index()
+dataNO2 = dataNO2_8.groupby(['nom_com', 'nom_poll']).max().reset_index()
+dataO3
 ```
