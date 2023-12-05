@@ -1,5 +1,5 @@
 ---
-title: Group 5 project
+title: Occitanie Quality Air Explorer
 format: html
 filters:
   - shinylive
@@ -97,7 +97,7 @@ def server(input, output, session):
 app = App(app_ui, server)  
 ```
 :::
-### TEST GRAPH ATMOS YEARS_PY
+### Représentation moyenne journalière
 ::: {.column-page-inset}
 
 ```{shinylive-python}
@@ -114,14 +114,15 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
-zone_atmos="nom_dept='HERAULT'","nom_com='MONTPELLIER'"
-polluant_atmos="'O3'","'NO2'"
+zone_atmos="nom_dept='ARIEGE'","nom_dept='AVEYRON'","nom_dept='GARD'","nom_dept='GERS'","nom_dept='HAUTE-GARONNE'","nom_dept='HERAULT'","nom_dept='HAUTES-PYRENEES'","nom_dept='HAUTES-PYRENEES'","nom_com='AGDE'","nom_com='ALES'","nom_com='ARGELES-GAZOST'","nom_com='AUCH'","nom_com='BELESTA-EN-LAURAGAIS'","nom_com='BESSIERES'","nom_com='BEZIERS'","nom_com='BLAGNAC'","nom_com='CORNEILHAN'","nom_com='GAUDONVILLE'","nom_com='LA CALMETTE'","nom_com='LATTES'","nom_com='LOURDES'","nom_com='LUNEL-VIEL'","nom_com='MIRAMONT-DE-COMMINGES'","nom_com='MONTGISCARD'","nom_com='MONTPELLIER'","nom_com='NIMES'","nom_com='PEYRUSSE-VIEILLE'","nom_com='SAINT-GAUDENS'","nom_com='SAINT-GIRONS'","nom_com='SAZE'","nom_com='TARBES'","nom_com='TOULOUSE'"     
+
+polluant_atmos="'O3'","'NO2'","'NO'","'NOX'","'H2S","'PM10'","'PM2.5","'SO2"
 
 app_ui = ui.page_fluid(
     ui.layout_sidebar(
         ui.panel_sidebar(
-                ui.input_selectize("selection1", "zone_atmos", zone_atmos, multiple = True),
-                ui.input_selectize("condition1", "polluant", polluant_atmos, multiple = True),
+                ui.input_selectize("selection1", "zone_atmos", Département ou ville,multiple = True),
+                ui.input_selectize("condition1", "polluant", Polluant, multiple = True),
                 ui.input_date("date","à partir de"),
                 ),
         ui.panel_main(
@@ -129,7 +130,7 @@ app_ui = ui.page_fluid(
                     ui.output_text_verbatim("info1"),
                 ),
             ),
-    ui.output_plot("GRAPH",height='800px'),
+    ui.output_plot("GRAPH_YEAR",height='800px'), #
 )
 
 def server(input, output, session):
@@ -148,7 +149,7 @@ def server(input, output, session):
 
     @output
     @render.plot
-    async def GRAPH():
+    async def GRAPH_YEAR():
     
         #supprimer les warnings
         pd.options.mode.chained_assignment = None  # default='warn'
