@@ -122,7 +122,7 @@ app_ui = ui.page_fluid(
     ui.layout_sidebar(
         ui.panel_sidebar(
                 ui.input_selectize("selection1", "zone_atmos", zone_atmos,multiple = True),
-                ui.input_selectize("condition1", "polluant", polluant, multiple = True),
+                ui.input_selectize("condition1", "polluant", polluant_atmos, multiple = True),
                 ui.input_date("date","à partir de"),
                 ),
         ui.panel_main(
