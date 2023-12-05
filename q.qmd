@@ -121,8 +121,8 @@ polluant_atmos="'O3'","'NO2'","'NO'","'NOX'","'H2S","'PM10'","'PM2.5","'SO2"
 app_ui = ui.page_fluid(
     ui.layout_sidebar(
         ui.panel_sidebar(
-                ui.input_selectize("selection1", "zone_atmos", Département ou ville,multiple = True),
-                ui.input_selectize("condition1", "polluant", Polluant, multiple = True),
+                ui.input_selectize("selection1", "zone_atmos", zone_atmos,multiple = True),
+                ui.input_selectize("condition1", "polluant", polluant, multiple = True),
                 ui.input_date("date","à partir de"),
                 ),
         ui.panel_main(
