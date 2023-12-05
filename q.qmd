@@ -182,15 +182,14 @@ def server(input, output, session):
             #les différentes stations
             nom_stations = df_pv["nom_station"].unique()
             nb_stations = len(nom_stations)
+            
             ####cas limite 1 station
-            if(nb_stations==1):
-                df_pvs = df_pv.loc[df_pv["nom_station"] == nom_stations[0]]
-                df_pvs = df_pvs.set_index(["date_debut"])
-                plt.figure(figsize=(10,5))
-                f=plt.plot(df_pvs["valeur"].resample("d").mean())
-                return f
-            #plusieurs graphiques
-            fig, axes= plt.subplots(nb_stations,sharex=True)
+            if nb_stations == 1:
+                fig, axes = plt.subplots(1, 1, figsize=(10, 25), layout="constrained")  # Créer une seule sous-figure
+                axes = [axes]  # Mettre l'unique axe dans une liste
+    	    else:
+                fig, axes = plt.subplots(nb_stations, 1, figsize=(10, 25), sharex=True, layout="constrained")
+            
             #titre général
             fig.suptitle("Pollution au " + str(polluants) + " à " + str(villes), fontsize=16)
             for i in range(nb_stations):             
@@ -203,7 +202,7 @@ def server(input, output, session):
                 for label in axes[i].get_xticklabels():
                     label.set_ha("right")
                     label.set_rotation(45)
-                axes[i].set_ylabel("Concentration en µg/m3")
+                axes[i].set_ylabel("µg/m3")
                 axes[i].set_title(
                     "Concentration du " + str(polluants) + " à " + str(nom_stations[i])
                 )
