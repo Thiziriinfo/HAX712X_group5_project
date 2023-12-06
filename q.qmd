@@ -4,7 +4,7 @@ format: html
 filters:
   - shinylive
 ---
-### TEST CARTE
+### Carte des stations d'Occitanie
 ::: {.column-page-inset}
 ```{shinylive-python}
 #| standalone: true
@@ -97,9 +97,11 @@ def server(input, output, session):
 app = App(app_ui, server)  
 ```
 :::
-### Représentation moyenne journalière
-::: {.column-page-inset}
 
+::: {.column-screen-inset}
+
+::: {.column width="49%"}
+### Représentation temporelle d'un polluant
 ```{shinylive-python}
 #| standalone: true
 #| viewerHeight: 1600
@@ -113,7 +115,7 @@ import numpy as np
 from datetime import datetime
 import matplotlib.pyplot as plt
 
-zone_atmos="nom_dept='ARIEGE'","nom_dept='AVEYRON'","nom_dept='GARD'","nom_dept='GERS'","nom_dept='HAUTE-GARONNE'","nom_dept='HERAULT'","nom_dept='HAUTES-PYRENEES'","nom_dept='HAUTES-PYRENEES'","nom_com='AGDE'","nom_com='ALES'","nom_com='ARGELES-GAZOST'","nom_com='AUCH'","nom_com='BELESTA-EN-LAURAGAIS'","nom_com='BESSIERES'","nom_com='BEZIERS'","nom_com='BLAGNAC'","nom_com='CORNEILHAN'","nom_com='GAUDONVILLE'","nom_com='LA CALMETTE'","nom_com='LATTES'","nom_com='LOURDES'","nom_com='LUNEL-VIEL'","nom_com='MIRAMONT-DE-COMMINGES'","nom_com='MONTGISCARD'","nom_com='MONTPELLIER'","nom_com='NIMES'","nom_com='PEYRUSSE-VIEILLE'","nom_com='SAINT-GAUDENS'","nom_com='SAINT-GIRONS'","nom_com='SAZE'","nom_com='TARBES'","nom_com='TOULOUSE'"     
+zone_atmos="nom_com='AGDE'","nom_com='ALES'","nom_com='ARGELES-GAZOST'","nom_com='AUCH'","nom_com='BELESTA-EN-LAURAGAIS'","nom_com='BESSIERES'","nom_com='BEZIERS'","nom_com='BLAGNAC'","nom_com='CORNEILHAN'","nom_com='GAUDONVILLE'","nom_com='LA CALMETTE'","nom_com='LATTES'","nom_com='LOURDES'","nom_com='LUNEL-VIEL'","nom_com='MIRAMONT-DE-COMMINGES'","nom_com='MONTGISCARD'","nom_com='MONTPELLIER'","nom_com='NIMES'","nom_com='PEYRUSSE-VIEILLE'","nom_com='SAINT-GAUDENS'","nom_com='SAINT-GIRONS'","nom_com='SAZE'","nom_com='TARBES'","nom_com='TOULOUSE'"     
 
 polluant_atmos="'O3'","'NO2'","'NO'","'NOX'","'H2S","'PM10'","'PM2.5'","'SO2'"
 
@@ -129,7 +131,7 @@ app_ui = ui.page_fluid(
                     ui.output_text_verbatim("info1"),
                 ),
             ),
-    ui.output_plot("GRAPH_YEAR",height='800px'), #
+    ui.output_plot("GRAPH_YEAR",height='1600px'), #
 )
 
 def server(input, output, session):
@@ -188,7 +190,7 @@ def server(input, output, session):
                 fig, axes = plt.subplots(nb_stations, 1, figsize=(10, 25), sharex=True, layout="constrained")
             
             #titre général
-            fig.suptitle("Pollution au " + str(polluants) + " à " + str(villes), fontsize=16)
+            fig.suptitle("Pollution au " + str(polluants) + " à " + str(villes), fontsize=12)
             for i in range(nb_stations):             
                 df_pvs = df_pv.loc[df_pv["nom_station"] == nom_stations[i]]
                 #datetime devient index
@@ -201,8 +203,7 @@ def server(input, output, session):
                     label.set_rotation(45)
                 axes[i].set_ylabel("µg/m3")
                 axes[i].set_title(
-                    "Concentration du " + str(polluants) + " à " + str(nom_stations[i])
-                )
+                    "Concentration du " + str(polluants) + " à " + str(nom_stations[i]))
                 axes[i].grid(True)
             return fig
         return graphique(villes, polluants)
@@ -220,9 +221,12 @@ app = App(app_ui, server, debug=True)
 ```
 :::
 
-### Représentation de l'effet week-end
-::: {.column-page-inset}
+::: {.column width="1%"}
+:::
 
+
+::: {.column width="49%"}
+### Représentation de l'effet week-end
 ```{shinylive-python}
 #| standalone: true
 #| viewerHeight: 1600
@@ -236,7 +240,7 @@ import numpy as np
 from datetime import datetime
 import matplotlib.pyplot as plt
 
-zone_atmos="nom_dept='ARIEGE'","nom_dept='AVEYRON'","nom_dept='GARD'","nom_dept='GERS'","nom_dept='HAUTE-GARONNE'","nom_dept='HERAULT'","nom_dept='HAUTES-PYRENEES'","nom_dept='HAUTES-PYRENEES'","nom_com='AGDE'","nom_com='ALES'","nom_com='ARGELES-GAZOST'","nom_com='AUCH'","nom_com='BELESTA-EN-LAURAGAIS'","nom_com='BESSIERES'","nom_com='BEZIERS'","nom_com='BLAGNAC'","nom_com='CORNEILHAN'","nom_com='GAUDONVILLE'","nom_com='LA CALMETTE'","nom_com='LATTES'","nom_com='LOURDES'","nom_com='LUNEL-VIEL'","nom_com='MIRAMONT-DE-COMMINGES'","nom_com='MONTGISCARD'","nom_com='MONTPELLIER'","nom_com='NIMES'","nom_com='PEYRUSSE-VIEILLE'","nom_com='SAINT-GAUDENS'","nom_com='SAINT-GIRONS'","nom_com='SAZE'","nom_com='TARBES'","nom_com='TOULOUSE'"     
+zone_atmos="nom_com='AGDE'","nom_com='ALES'","nom_com='ARGELES-GAZOST'","nom_com='AUCH'","nom_com='BELESTA-EN-LAURAGAIS'","nom_com='BESSIERES'","nom_com='BEZIERS'","nom_com='BLAGNAC'","nom_com='CORNEILHAN'","nom_com='GAUDONVILLE'","nom_com='LA CALMETTE'","nom_com='LATTES'","nom_com='LOURDES'","nom_com='LUNEL-VIEL'","nom_com='MIRAMONT-DE-COMMINGES'","nom_com='MONTGISCARD'","nom_com='MONTPELLIER'","nom_com='NIMES'","nom_com='PEYRUSSE-VIEILLE'","nom_com='SAINT-GAUDENS'","nom_com='SAINT-GIRONS'","nom_com='SAZE'","nom_com='TARBES'","nom_com='TOULOUSE'"     
 
 polluant_atmos="'O3'","'NO2'","'NO'","'NOX'","'H2S","'PM10'","'PM2.5'","'SO2'"
 
@@ -251,7 +255,7 @@ app_ui = ui.page_fluid(
                     ui.output_text_verbatim("info1"),
                 ),
             ),
-    ui.output_plot("GRAPH_WEEK",height='1000px'), #
+    ui.output_plot("GRAPH_WEEK",height='1600px'), #
 )
 
 def server(input, output, session):
@@ -281,7 +285,7 @@ def server(input, output, session):
         records_data = [record['attributes'] for record in records]
         df_atmo = pd.DataFrame(records_data)
 
-        # %%
+        # datetime
         df_atmo["date_debut"] = df_atmo["date_debut"]/1000
         df_atmo["date_debut"] = df_atmo["date_debut"].apply(
                     lambda _: datetime.utcfromtimestamp(_)
@@ -309,7 +313,7 @@ def server(input, output, session):
                 fig, axes = plt.subplots(nb_stations, 1, figsize=(10, 25), sharex=True, layout="constrained")
             
             #titre général
-            fig.suptitle("Pollution selon le jour de la semaine à " + str(villes), fontsize=16)
+            fig.suptitle("Pollution selon le jour de la semaine à " + str(villes), fontsize=12)
             # pour la légende
             jour = ["lundi", "mardi", "mercredi","jeudi", "vendredi", "samedi", "dimanche"]
             for i in range(nb_stations):
@@ -325,7 +329,7 @@ def server(input, output, session):
                 axes[i].plot(pollution_week)
                 axes[i].set_xticks(np.arange(0, 24))
                 axes[i].set_xticklabels(np.arange(0, 24), rotation=45)
-                axes[i].set_ylabel("Concentration en µg/m3")
+                axes[i].set_ylabel("µg/m3")
                 axes[i].set_title("Concentration du " + str(polluants) + " à " + str(nom_stations[i]))
                 axes[i].legend(jour, loc="lower left", bbox_to_anchor=(1, 0.1)).set_visible(True)
                 axes[i].grid(True)
@@ -343,5 +347,7 @@ def server(input, output, session):
 app = App(app_ui, server, debug=True)
 
 ```
+:::
+
 :::
 
