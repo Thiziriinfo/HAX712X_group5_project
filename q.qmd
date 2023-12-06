@@ -112,7 +112,6 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 import matplotlib.pyplot as plt
-import matplotlib.gridspec as gridspec
 
 zone_atmos="nom_dept='ARIEGE'","nom_dept='AVEYRON'","nom_dept='GARD'","nom_dept='GERS'","nom_dept='HAUTE-GARONNE'","nom_dept='HERAULT'","nom_dept='HAUTES-PYRENEES'","nom_dept='HAUTES-PYRENEES'","nom_com='AGDE'","nom_com='ALES'","nom_com='ARGELES-GAZOST'","nom_com='AUCH'","nom_com='BELESTA-EN-LAURAGAIS'","nom_com='BESSIERES'","nom_com='BEZIERS'","nom_com='BLAGNAC'","nom_com='CORNEILHAN'","nom_com='GAUDONVILLE'","nom_com='LA CALMETTE'","nom_com='LATTES'","nom_com='LOURDES'","nom_com='LUNEL-VIEL'","nom_com='MIRAMONT-DE-COMMINGES'","nom_com='MONTGISCARD'","nom_com='MONTPELLIER'","nom_com='NIMES'","nom_com='PEYRUSSE-VIEILLE'","nom_com='SAINT-GAUDENS'","nom_com='SAINT-GIRONS'","nom_com='SAZE'","nom_com='TARBES'","nom_com='TOULOUSE'"     
 
@@ -166,10 +165,7 @@ def server(input, output, session):
         df_atmo["date_debut"] = df_atmo["date_debut"].apply(
                     lambda _: datetime.utcfromtimestamp(_)
                 )
-        # nettoyage df
-        #df = df.drop(["date_fin", "statut_valid", "x_l93", "y_l93", "geom", "metrique"], axis=1)
 
-        # %%
         # liste des villes et des polluants
         villes = df_atmo["nom_com"].unique().tolist()
         villes.sort()
@@ -219,6 +215,131 @@ def server(input, output, session):
             d=await data()
             df = d[1]
             return f"Request URL: {url1()}\nResult type: {type(d[1])}\n{df}"
+app = App(app_ui, server, debug=True)
+
+```
+:::
+
+### Représentation de l'effet week-end
+::: {.column-page-inset}
+
+```{shinylive-python}
+#| standalone: true
+#| viewerHeight: 1600
+#| column: page
+from pprint import pformat
+import pyodide.http
+from shiny import App, reactive, render, ui
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+from datetime import datetime
+import matplotlib.pyplot as plt
+
+zone_atmos="nom_dept='ARIEGE'","nom_dept='AVEYRON'","nom_dept='GARD'","nom_dept='GERS'","nom_dept='HAUTE-GARONNE'","nom_dept='HERAULT'","nom_dept='HAUTES-PYRENEES'","nom_dept='HAUTES-PYRENEES'","nom_com='AGDE'","nom_com='ALES'","nom_com='ARGELES-GAZOST'","nom_com='AUCH'","nom_com='BELESTA-EN-LAURAGAIS'","nom_com='BESSIERES'","nom_com='BEZIERS'","nom_com='BLAGNAC'","nom_com='CORNEILHAN'","nom_com='GAUDONVILLE'","nom_com='LA CALMETTE'","nom_com='LATTES'","nom_com='LOURDES'","nom_com='LUNEL-VIEL'","nom_com='MIRAMONT-DE-COMMINGES'","nom_com='MONTGISCARD'","nom_com='MONTPELLIER'","nom_com='NIMES'","nom_com='PEYRUSSE-VIEILLE'","nom_com='SAINT-GAUDENS'","nom_com='SAINT-GIRONS'","nom_com='SAZE'","nom_com='TARBES'","nom_com='TOULOUSE'"     
+
+polluant_atmos="'O3'","'NO2'","'NO'","'NOX'","'H2S","'PM10'","'PM2.5'","'SO2'"
+
+app_ui = ui.page_fluid(
+    ui.layout_sidebar(
+        ui.panel_sidebar(
+                ui.input_selectize("selection1", "zone_atmos", zone_atmos,multiple = True),
+                ui.input_selectize("condition1", "polluant", polluant_atmos, multiple = True),
+                ),
+        ui.panel_main(
+
+                    ui.output_text_verbatim("info1"),
+                ),
+            ),
+    ui.output_plot("GRAPH_WEEK",height='1000px'), #
+)
+
+def server(input, output, session):
+    def url2():
+        cond1 = "where=(nom_poll="+ ') AND ('.join(input.condition1())+')'
+        cond2 =  "AND ("+'AND ('.join(input.selection1())+')'
+        return f"https://services9.arcgis.com/7Sr9Ek9c1QTKmbwr/arcgis/rest/services/Mesure_horaire_(30j)_Region_Occitanie_Polluants_Reglementaires_1/FeatureServer/0/query?{cond1}{cond2}&outFields=nom_com,nom_station,nom_poll,valeur,date_debut&outSR=4326&f=json"
+
+    @reactive.Calc
+    async def data():
+        response2 = await pyodide.http.pyfetch(url2())
+        dat2 = await response2.json()
+        r = dat2,dat2
+        return r
+
+    @output
+    @render.plot
+    async def GRAPH_WEEK():
+    
+        #supprimer les warnings
+        pd.options.mode.chained_assignment = None  # default='warn'
+
+        response = await data()
+        dat = response[1]
+
+        records = dat.get('features', [])
+        records_data = [record['attributes'] for record in records]
+        df_atmo = pd.DataFrame(records_data)
+
+        # %%
+        df_atmo["date_debut"] = df_atmo["date_debut"]/1000
+        df_atmo["date_debut"] = df_atmo["date_debut"].apply(
+                    lambda _: datetime.utcfromtimestamp(_)
+                )
+
+        # liste des villes et des polluants
+        villes = df_atmo["nom_com"].unique().tolist()
+        villes.sort()
+        polluants = df_atmo["nom_poll"].unique().tolist()
+        polluants.sort()
+
+        # Fonction qui trace le graphique
+        def graph_week(villes, polluants):
+            #sélection : pas utile
+            df_pv = df_atmo
+            #les différentes stations
+            nom_stations = df_pv["nom_station"].unique()
+            nb_stations = len(nom_stations)
+            
+            ####cas limite 1 station
+            if nb_stations == 1:
+                fig, axes = plt.subplots(1, 1, figsize=(10, 25), layout="constrained")  # Créer une seule sous-figure
+                axes = [axes]  # Mettre l'unique axe dans une liste
+    	    else:
+                fig, axes = plt.subplots(nb_stations, 1, figsize=(10, 25), sharex=True, layout="constrained")
+            
+            #titre général
+            fig.suptitle("Pollution selon le jour de la semaine à " + str(villes), fontsize=16)
+            # pour la légende
+            jour = ["lundi", "mardi", "mercredi","jeudi", "vendredi", "samedi", "dimanche"]
+            for i in range(nb_stations):
+                # on ne garde que les données concernant la station en question             
+                df_pvs = df_pv.loc[df_pv["nom_station"] == nom_stations[i]]
+                #datetime devient index
+                df_pvs = df_pvs.set_index(["date_debut"])
+                # colonne avec le numéro des jours
+                df_pvs["weekday"] = df_pvs.index.weekday        
+                # on regroupe par jour et on fait la moyenne
+                pollution_week = (df_pvs.groupby(["weekday", df_pvs.index.hour])["valeur"].mean().unstack(level=0))
+                # labellisation et légende
+                axes[i].plot(pollution_week)
+                axes[i].set_xticks(np.arange(0, 24))
+                axes[i].set_xticklabels(np.arange(0, 24), rotation=45)
+                axes[i].set_ylabel("Concentration en µg/m3")
+                axes[i].set_title("Concentration du " + str(polluants) + " à " + str(nom_stations[i]))
+                axes[i].legend(jour, loc="lower left", bbox_to_anchor=(1, 0.1)).set_visible(True)
+                axes[i].grid(True)
+            return fig
+        return graph_week(villes, polluants)
+    @output
+    @render.text
+    async def info1():
+        if input.selection1() == "":
+            return ""
+        else:
+            d=await data()
+            df = d[1]
+            return f"Request URL: {url2()}\nResult type: {type(d[1])}\n{df}"
 app = App(app_ui, server, debug=True)
 
 ```
