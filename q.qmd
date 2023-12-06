@@ -110,7 +110,10 @@ app = App(app_ui, server)
 ```
 :::
 
+::: {.column-screen-inset}
+
 ::: {.column width="49%"}
+
 ### Représentation temporelle d'un polluant
 ```{shinylive-python}
 #| standalone: true
@@ -360,7 +363,6 @@ app = App(app_ui, server, debug=True)
 :::
 
 :::
-
 ### TEST GRAPH SYNOP
 ::: {.column-page-inset}
 
