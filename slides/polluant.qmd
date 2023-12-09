@@ -1,6 +1,5 @@
 ---
 title: "Polluants"
-format: html
 ---
 # H2S : hydrogène sulfuré
 
