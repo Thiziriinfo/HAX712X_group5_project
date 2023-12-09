@@ -72,7 +72,7 @@ gantt
 ```
 </center>
 
-Nous avons donc créé trois branches correspondant aux trois phases principales du projet : la sélection (select_data), le traitement des données (data) et l'interface utilisateur (visu). Ceci nous permettra de travailler en parallèle sur les différents aspects du projet dès que cela sera possible.
+Nous avons donc créé deux branches et la branche principale(main) correspondant aux trois phases principales du projet :  le traitement des données (data) et la carte interactive (visu) et l'interface utilisateur (main). Ceci nous permettra de travailler en parallèle sur les différents aspects du projet dès que cela sera possible.
 
 ## Choix des données
 
