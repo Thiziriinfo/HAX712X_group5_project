@@ -149,6 +149,7 @@ Pour la documentation, nous utiliserons la librairie Sphynx et pour la réalisat
 - Hamomi Majda : majda.hamomi@etu.umontpellier.fr
 - Gaggini Lorenzo : lorenzo.gaggini@etu.umontpellier.fr
 - Ollier Julien : julien.ollier@etu.umontpellier.fr
+<<<<<<< HEAD
 
 
 
@@ -158,3 +159,5 @@ Pour la documentation, nous utiliserons la librairie Sphynx et pour la réalisat
 
 
 
+=======
+>>>>>>> c513d984d6a8322aad121a5694425d4c3433ca12
