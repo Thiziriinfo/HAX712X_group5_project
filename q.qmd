@@ -34,7 +34,7 @@ from shiny import App, Inputs, Outputs, Session, reactive, ui
 polluant_atmos="'O3'","'NO2'","'NO'","'NOX'","'H2S","'PM10'","'PM2.5'","'SO2'"
 
 app_ui = ui.page_fluid(   
-    ui.input_selectize("condition1", "polluant_atmos", polluant_atmos,multiple = True),
+    ui.input_selectize("condition1", "Polluants", polluant_atmos,multiple = True),
     ui.output_text_verbatim("info1"),
     output_widget("map",height='500px')
     )
@@ -136,8 +136,8 @@ polluant_atmos="'O3'","'NO2'","'NO'","'NOX'","'H2S","'PM10'","'PM2.5'","'SO2'"
 app_ui = ui.page_fluid(
     ui.layout_sidebar(
         ui.panel_sidebar(
-                ui.input_selectize("selection1", "zone_atmos", zone_atmos,multiple = True),
-                ui.input_selectize("condition1", "polluant", polluant_atmos, multiple = True),
+                ui.input_selectize("selection1", "Ville", zone_atmos,multiple = True),
+                ui.input_selectize("condition1", "Polluant", polluant_atmos, multiple = True),
                 ui.input_date("date","à partir de"),
                 ),
         ui.panel_main(
@@ -170,7 +170,7 @@ def server(input, output, session):
         pd.options.mode.chained_assignment = None  # default='warn'
 
         response = await data()
-        dat= response[1]
+        dat = response[1]
 
         records = dat.get('features', [])
         records_data = [record['attributes'] for record in records]
@@ -184,9 +184,7 @@ def server(input, output, session):
 
         # liste des villes et des polluants
         villes = df_atmo["nom_com"].unique().tolist()
-        villes.sort()
         polluants = df_atmo["nom_poll"].unique().tolist()
-        polluants.sort()
 
         # Fonction qui trace le graphique
         def graphique(villes, polluants):
@@ -264,8 +262,8 @@ polluant_atmos="'O3'","'NO2'","'NO'","'NOX'","'H2S","'PM10'","'PM2.5'","'SO2'"
 app_ui = ui.page_fluid(
     ui.layout_sidebar(
         ui.panel_sidebar(
-                ui.input_selectize("selection1", "zone_atmos", zone_atmos,multiple = True),
-                ui.input_selectize("condition1", "polluant", polluant_atmos, multiple = True),
+                ui.input_selectize("selection1", "Ville", zone_atmos,multiple = True),
+                ui.input_selectize("condition1", "Polluant", polluant_atmos, multiple = True),
                 ),
         ui.panel_main(
 
@@ -310,9 +308,7 @@ def server(input, output, session):
 
         # liste des villes et des polluants
         villes = df_atmo["nom_com"].unique().tolist()
-        villes.sort()
         polluants = df_atmo["nom_poll"].unique().tolist()
-        polluants.sort()
 
         # Fonction qui trace le graphique
         def graph_week(villes, polluants):
@@ -358,7 +354,7 @@ def server(input, output, session):
     @output
     @render.text
     async def info1():
-        if input.selection1() == "":
+        if input.condition1() == "": #input.selection1() == "":
             return ""
         else:
             d=await data()
@@ -394,7 +390,7 @@ zone_atmos="'AGDE'","'ALES'","'ARGELES-GAZOST'","'AUCH'","'BELESTA-EN-LAURAGAIS'
 app_ui = ui.page_fluid(
     ui.layout_sidebar(
         ui.panel_sidebar(
-                ui.input_selectize("selection1", "zone_atmos", zone_atmos,multiple = True),
+                ui.input_selectize("selection1", "Ville", zone_atmos,multiple = True),
                 ),
         ui.panel_main(
                     ui.output_text_verbatim("info1"),
@@ -461,27 +457,23 @@ app = App(app_ui, server, debug=True)
 :::
 
 
-
-:::
-### TEST GRAPH SYNOP
-::: {.column-page-inset}
-
+::: {.column width="49%"}
+### Représentation d'indicateurs météorologiques
 ```{shinylive-python}
 #| standalone: true
-#| viewerHeight: 1600
+#| viewerHeight: 800
 #| column: page
 
 from pprint import pformat
 import pyodide.http
 from shiny import App, reactive, render, ui
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from datetime import datetime
 import matplotlib.pyplot as plt
-import matplotlib.gridspec as gridspec
 
-choices_synop= "date", "nom", "pres", "tc", "tminsolc", "nom_dept", "nom_dept"
+villes_synop = "'GOURDON'","'MILLAU'","'MONTPELLIER'","'PERPIGNAN'","'ST GIRONS'","'TARBES-OSSUN'", "'TOULOUSE-BLAGNAC'" 
+choices_synop= "date", "nom", "pres", "tc", "tminsolc", "nom_dept",
 condition_filtres_synop = 'nom="MONTPELLIER"','year(date)="2017"'
 y_synop="2022","2023"
 m_synop="01","02","03","04","05","06","07","06","08","09","10","11","12"
@@ -489,8 +481,8 @@ app_ui = ui.page_fluid(
     ui.layout_sidebar(
         ui.panel_sidebar(
             ui.input_selectize("selection", "Selection_synop", choices_synop, multiple = True),
-            ui.input_selectize("date1", "année", y_synop, multiple = True),
-            ui.input_selectize("date2", "mois", m_synop, multiple = True),
+            ui.input_selectize("date1", "Année", y_synop, multiple = True),
+            ui.input_selectize("date2", "Mois", m_synop, multiple = True),
         ),
         ui.panel_main(
             ui.output_text_verbatim("info"),
@@ -525,7 +517,47 @@ def server(input, output, session):
                 stack.append(dat)
             q=pformat(stack)
         return  f"{q}"
+    
+    @output
+    @render.plot
+    async def GRAPH_SYNOP():
+    
+        #supprimer les warnings
+        pd.options.mode.chained_assignment = None  # default='warn'
+
+        response = await data()
+        dat = response[1]
+
+        #retourner un dataframe
+        results = df_synop.get("results", [])
+        df_synop = pd.DataFrame(results)
+
+        #format date
+        df_synop["date"] = df_synop["date"].apply(lambda _: datetime.fromisoformat(_))
+
+        # Fonction qui trace le graphique
+        def graph_synop(ville, param):
+            #df_synop = df_synop.loc[
+            #df_synop["nom"] == ville, :
+            #]
+            #date en index
+            df_synop = df_synop.set_index(["date"])
+            fig, ax = plt.subplots(layout="constrained")
+            ax.plot(df_synop[param].resample("d").mean())
+            for label in ax.get_xticklabels():
+                label.set_ha("right")
+                label.set_rotation(45)
+            #ax.set_title("Valeur de la " + str(param) + " à " + str(ville))
+            ax.grid(True)
+            return fig
+        return graph_synop(ville, param)
+
 
 app = App(app_ui, server, debug=True)
 ```
 :::
+
+
+:::
+
+
