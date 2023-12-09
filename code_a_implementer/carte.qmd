@@ -112,6 +112,19 @@ for feature in geojson['features']:
     
     )
     mymap.add(geo_json)
+    # Ajouter la couche de marqueurs à la carte
+markers_layer = ipyleaflet.MarkerCluster(
+    markers=[
+        ipyleaflet.Marker(
+            location=(row['geometry'].centroid.y, row['geometry'].centroid.x),
+            title=f"{row['nom_com']} - {row['valeur']} µg/m³",  
+            draggable=False,
+        )
+        for _, row in df.iterrows()
+    ]
+)
+mymap.add_layer(markers_layer)
+
 
 mymap.save("p.html")
 ```
