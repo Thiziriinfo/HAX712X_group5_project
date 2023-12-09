@@ -112,6 +112,8 @@ for feature in geojson['features']:
     
     )
     mymap.add(geo_json)
+
+
     # Ajouter la couche de marqueurs à la carte
 markers_layer = ipyleaflet.MarkerCluster(
     markers=[
