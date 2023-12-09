@@ -1,7 +1,7 @@
 # Occitanie air quality explorer
 L'objectif du projet est de créer une application web dans laquelle il sera possible de visualiser un ou plusieurs graphiques simultanément décrivant l'évolution d'une valeur de polluant en fonction d'une donnée du climat. Tout ceci pourra être conditionné en amont par d'autres choix notamment temporels. Cela permettra de visualiser différents types de graphiques concernant les polluants.
 
-<center>
+
 ```{mermaid}
 flowchart TD
     A[Zone] --> B[Condition]
@@ -10,10 +10,10 @@ flowchart TD
     E --> G[Graphique]
     D --> G
 ```
-</center>
+
 Le code s'articulera comme suit :
 
-<center>
+
 ```{mermaid}
 flowchart TD
     A[OpenDataSoft]
@@ -31,7 +31,7 @@ flowchart TD
     D-->F & E
     F-->G
 ```
-</center>
+
 De plus, nous créerons une carte intéractive cliquable de la région Occitanie à la précision du canton pour obtenir un traitement suffisamment fin, l'échelle du département étant à priori trop grande. Toutefois, nous serons peut-être amené à changer celà en fonction de l'exploration des données. 
 
 Pour faire tout ça, nous nous organiserons en quatre phases  : 
@@ -53,7 +53,7 @@ Pour faire tout ça, nous nous organiserons en quatre phases  :
 Durant le développement du projet, l'IDE commun sera Jupyter-Notebook.
 
 **Organisation temporelle du projet**
-<center>
+
 ```{mermaid}
 gantt
     title Occitanie air quality explorer
@@ -70,7 +70,7 @@ gantt
         Documentation : a3, after a2 , 10d
         Beamer : after a3, 5d
 ```
-</center>
+
 
 Nous avons donc créé deux branches et la branche principale(main) correspondant aux trois phases principales du projet :  le traitement des données (data) et la carte interactive (visu) et l'interface utilisateur (main). Ceci nous permettra de travailler en parallèle sur les différents aspects du projet dès que cela sera possible.
 
@@ -110,7 +110,7 @@ Exemple de visuel attendu :
 
 Sur cette même carte nous souhaiterions avoir des menus déroulants avec les différents choix de polluants comme l'exemple simpliste ci-dessous : 
 
-<center>
+
 <form>
 <label for="pays">Sélectionnez le Polluant :</label>
 <select id="pays" name="pays">
@@ -120,16 +120,16 @@ Sur cette même carte nous souhaiterions avoir des menus déroulants avec les di
   <!-- Autres options -->
 </select>
 </form>
-</center>
+
 
 Puis en cliquant sur un canton, notre application afficherait le graphique désiré sur le contaon choisi.
 
 
 Nous souhaiterions obtenir quelque-chose ressemblant à l'image ci-dessous :
 
-<center>
+
 ![](./Images/dash_result.png "Résultat espéré")
-</center>
+
 
 Pour les graphiques, nous utiliserons les librairies classiques que sont : 
 
