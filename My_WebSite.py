@@ -1,1 +1,1 @@
-# dans ce fichier nous metterons tout le code python 
+# daans ce fichier faut mettre tout le code python 
