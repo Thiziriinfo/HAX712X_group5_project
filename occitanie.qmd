@@ -113,7 +113,7 @@ for feature in geojson['features']:
         feature,
         style_function=lambda x, color=color: {
             'fillColor': color,
-            'color': '#e5f5e0',
+            'color': 'Yellow',
             'weight': 2,
             'fillOpacity': 0.7
         }
@@ -121,22 +121,38 @@ for feature in geojson['features']:
 
 
 
- # Affichez la carte
-mymap.save('m.html')
+ 
 
 gdf_geojson = gpd.read_file("https://france-geojson.gregoiredavid.fr/repo/regions/occitanie/communes-occitanie.geojson")
 
 # Effectuer une jointure entre le GeoDataFrame et le DataFrame
 gdf_merged = gdf_geojson.merge(df, how='inner', left_on='nom', right_on='nom_com')
+
+import random
+
+# Créer un dictionnaire pour stocker les couleurs associées à chaque ville
+ville_couleur_dict = {}
+
 # Ajouter un marqueur pour chaque station météorologique
 for index, row in gdf_merged.iterrows():
     centroid_coords = row['geometry'].centroid.coords[0]
+    # Si la ville n'a pas encore de couleur attribuée, générez une nouvelle couleur
+    if row['nom_com'] not in ville_couleur_dict:
+        ville_couleur_dict[row['nom_com']] = "#{:06x}".format(random.randint(0, 0xFFFFFF))
+    # Utiliser la couleur associée à la ville
+    marker_color = ville_couleur_dict[row['nom_com']]   
+    marker_icon = folium.Icon(color=marker_color) 
     folium.Marker(
         location=[centroid_coords[1], centroid_coords[0]],
-        popup=f"{row['nom_com']} {row['nom_poll']} {row['valeur']}"
+        popup=f"Ville: {row['nom_com']} <br> Polluant: {row['nom_poll']} <br> Valeur: {row['valeur']}",
+        icon=marker_icon
     ).add_to(mymap)
 
 
+   
+
+# Affichez la carte
+mymap.save('m.html')
 ```
 
 
